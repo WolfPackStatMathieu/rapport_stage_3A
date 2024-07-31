@@ -1,24 +1,22 @@
-name: 'Quarto Publish'
+name: Deploy Quarto Project
 
 on:
   push:
     branches:
-      - main
+      - main  # Change to your default branch
 
 jobs:
-  publish:
+  build-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Setup Quarto
+      - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          quarto publish gh-pages
