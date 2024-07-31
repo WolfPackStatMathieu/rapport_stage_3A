@@ -7,7 +7,6 @@ website:
     right:
       - text: "Home"
         href: index.qmd
-
 format:
   html:
     theme: default
