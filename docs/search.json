@@ -9,85 +9,106 @@
   {
     "objectID": "index.html#découverte-et-contexte",
     "href": "index.html#découverte-et-contexte",
-    "title": "rapport_stage_3A",
+    "title": "Rapport de stage 3A",
     "section": "1. Découverte et Contexte",
     "text": "1. Découverte et Contexte\n\nPremiers pas dans le stage : Enthousiasme et incertitude\n\n\nIntroduction à la cybersécurité : Définition et importance\n\n\nPrésentation de l’équipe SOC et du système d’information (SI)\n\n\nCompréhension du SIEM et des logs"
   },
   {
     "objectID": "index.html#recherche-et-collecte-de-données",
     "href": "index.html#recherche-et-collecte-de-données",
-    "title": "rapport_stage_3A",
+    "title": "Rapport de stage 3A",
     "section": "2. Recherche et Collecte de Données",
     "text": "2. Recherche et Collecte de Données\n\nAttente de Splunk et recherche de datasets pertinents\n\nTypes de données : Réseau, logs, HTTP\nSélection et préparation des datasets ### Présentation des premières données obtenues"
   },
   {
     "objectID": "index.html#choix-des-problèmes-et-des-outils-de-machine-learning",
     "href": "index.html#choix-des-problèmes-et-des-outils-de-machine-learning",
-    "title": "rapport_stage_3A",
+    "title": "Rapport de stage 3A",
     "section": "3. Choix des Problèmes et des Outils de Machine Learning",
     "text": "3. Choix des Problèmes et des Outils de Machine Learning\n\nDéfinition des problèmes de machine learning en cybersécurité\n\n\nIntroduction à Scikit-learn et choix des modèles\n\n\nFormation à l’interprétabilité des modèles"
   },
   {
     "objectID": "index.html#exploration-de-modèles-et-outils-avancés",
     "href": "index.html#exploration-de-modèles-et-outils-avancés",
-    "title": "rapport_stage_3A",
+    "title": "Rapport de stage 3A",
     "section": "4. Exploration de Modèles et Outils Avancés",
     "text": "4. Exploration de Modèles et Outils Avancés\n\nEssais avec XGBoost pour la classification des malwares\n\n\nDécouverte de MLflow et utilisation de l’API\n\n\nIntroduction au deep learning avec le livre “Deep Learning from Scratch” (DLFS)\n\n\nExploration des design patterns en deep learning"
   },
   {
     "objectID": "index.html#anomaly-detection-et-modèles-de-classification",
     "href": "index.html#anomaly-detection-et-modèles-de-classification",
-    "title": "rapport_stage_3A",
+    "title": "Rapport de stage 3A",
     "section": "5. Anomaly Detection et Modèles de Classification",
     "text": "5. Anomaly Detection et Modèles de Classification\n\nDétour par la détection d’anomalies : Difficultés et recentrage\n\n\nAnalyses simples avec KNN et clustering\n\n\nAnalyse des données HTTP et détection des attaques (ex. DDOS)\n\n\nFocalisation sur l’analyse des URL et compréhension des attaques"
   },
   {
     "objectID": "index.html#exploration-darticles-scientifiques",
     "href": "index.html#exploration-darticles-scientifiques",
-    "title": "rapport_stage_3A",
+    "title": "Rapport de stage 3A",
     "section": "6. Exploration d’Articles Scientifiques",
     "text": "6. Exploration d’Articles Scientifiques\n\nLecture et analyse de l’article “Machine Learning for Cybersecurity Applications” de la West Virginia University (WVU)\n\nSynthèse des méthodes et résultats principaux ### Étude de “A Comprehensive Review of Anomaly Detection in Web Logs” du Hasso Plattner Institute (HPI)\nPrincipales techniques d’anomaly detection discutées ### Analyse de l’article “CRISIS2020_EasyChair_PID_011”\nPoints clés et implications pour la cybersécurité ### Exploration de “Conf_SIN2022__SWAF” pour le développement d’un pare-feu applicatif basé sur du machine learning\nInnovations et applications potentielles"
   },
   {
     "objectID": "index.html#modélisation-et-évaluation-des-modèles",
     "href": "index.html#modélisation-et-évaluation-des-modèles",
-    "title": "rapport_stage_3A",
+    "title": "Rapport de stage 3A",
     "section": "7. Modélisation et Évaluation des Modèles",
     "text": "7. Modélisation et Évaluation des Modèles\n\nModélisation des URL : KNN, SVM, regression logistique, CNN\n\n\nUtilisation de ChatGPT et des GPU pour accélérer le développement\n\n\nOrganisation des priorités et gestion des expérimentations"
   },
   {
     "objectID": "index.html#travail-avec-splunk-et-pipelines",
     "href": "index.html#travail-avec-splunk-et-pipelines",
-    "title": "rapport_stage_3A",
+    "title": "Rapport de stage 3A",
     "section": "8. Travail avec Splunk et Pipelines",
     "text": "8. Travail avec Splunk et Pipelines\n\nTraitement des données Splunk en préproduction\n\n\nTokenization des URL et limitations\n\n\nDéveloppement de pipelines et utilisation de GridsearchCV\n\n\nÉvaluation des performances des modèles"
   },
   {
     "objectID": "index.html#expérimentations-et-déploiement",
     "href": "index.html#expérimentations-et-déploiement",
-    "title": "rapport_stage_3A",
+    "title": "Rapport de stage 3A",
     "section": "9. Expérimentations et Déploiement",
     "text": "9. Expérimentations et Déploiement\n\nUtilisation de MLFlow pour la gestion des expérimentations\n\n\nApprentissage à requêter et déployer un modèle via une API\n\n\nDéploiement sur un cluster Kubernetes et gestion du preprocessing\n\n\nIntroduction à Metaflow (Netflix) et tests préliminaires"
   },
   {
     "objectID": "index.html#reproductibilité-et-mlops",
     "href": "index.html#reproductibilité-et-mlops",
-    "title": "rapport_stage_3A",
+    "title": "Rapport de stage 3A",
     "section": "10. Reproductibilité et MLOps",
     "text": "10. Reproductibilité et MLOps\n\nImportance de la reproductibilité et utilisation des cours de l’ENSAE\n\n\nRéalisation d’un projet MLOps :\n\nDéploiement d’une API sur Kubernetes\nSystème d’entraînement et stockage des modèles ### Exploration de Spark pour le calcul et le streaming"
   },
   {
     "objectID": "index.html#conclusion",
     "href": "index.html#conclusion",
-    "title": "rapport_stage_3A",
+    "title": "Rapport de stage 3A",
     "section": "Conclusion",
     "text": "Conclusion\n\nBilan du stage et accomplissements\n\n\nPerspectives futures : Améliorations et extensions possibles\n\n\nRemerciements et réflexions personnelles"
   },
   {
     "objectID": "index.html#annexe",
     "href": "index.html#annexe",
-    "title": "rapport_stage_3A",
+    "title": "Rapport de stage 3A",
     "section": "Annexe",
     "text": "Annexe\n\nRessources supplémentaires : Notebooks, articles, tutoriels, dépôts Github\n\n\nDétails techniques des implémentations et configurations\n\n\nBibliographie et références"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Rapport de stage 3A",
+    "section": "",
+    "text": "Introduction\nDécouverte et Contexte\nRecherche et Collecte de Données\nChoix des Problèmes et des Outils de Machine Learning\nExploration de Modèles et Outils Avancés\nAnomaly Detection et Modèles de Classification\nExploration d’Articles Scientifiques\nModélisation et Évaluation des Modèles\nTravail avec Splunk et Pipelines\nExpérimentations et Déploiement\nReproductibilité et MLOps\nConclusion\nAnnexe"
+  },
+  {
+    "objectID": "index.html#table-des-matières",
+    "href": "index.html#table-des-matières",
+    "title": "Rapport de stage 3A",
+    "section": "",
+    "text": "Introduction\nDécouverte et Contexte\nRecherche et Collecte de Données\nChoix des Problèmes et des Outils de Machine Learning\nExploration de Modèles et Outils Avancés\nAnomaly Detection et Modèles de Classification\nExploration d’Articles Scientifiques\nModélisation et Évaluation des Modèles\nTravail avec Splunk et Pipelines\nExpérimentations et Déploiement\nReproductibilité et MLOps\nConclusion\nAnnexe"
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Rapport de stage 3A",
+    "section": "Introduction",
+    "text": "Introduction\n\nContexte général du stage\n\n\nImportance de la cybersécurité et du machine learning dans ce domaine\n\n\nObjectifs du stage"
   }
 ]

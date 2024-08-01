@@ -1,6 +1,28 @@
 ---
-title: "rapport_stage_3A"
+title: "Rapport de stage 3A"
+author: "Mathieu Thomassin"
+date: "2024-08-31"
+description: "Un rapport détaillé sur mon stage de 3e année au SOC, couvrant divers aspects de la cybersécurité et du machine learning."
+keywords: ["cybersécurité", "machine learning", "stage", "rapport"]
 ---
+
+## Table des matières
+
+- [Introduction](#introduction)
+- [Découverte et Contexte](#1-découverte-et-contexte)
+- [Recherche et Collecte de Données](#2-recherche-et-collecte-de-données)
+- [Choix des Problèmes et des Outils de Machine Learning](#3-choix-des-problèmes-et-des-outils-de-machine-learning)
+- [Exploration de Modèles et Outils Avancés](#4-exploration-de-modèles-et-outils-avancés)
+- [Anomaly Detection et Modèles de Classification](#5-anomaly-detection-et-modèles-de-classification)
+- [Exploration d'Articles Scientifiques](#6-exploration-darticles-scientifiques)
+- [Modélisation et Évaluation des Modèles](#7-modélisation-et-évaluation-des-modèles)
+- [Travail avec Splunk et Pipelines](#8-travail-avec-splunk-et-pipelines)
+- [Expérimentations et Déploiement](#9-expérimentations-et-déploiement)
+- [Reproductibilité et MLOps](#10-reproductibilité-et-mlops)
+- [Conclusion](#conclusion)
+- [Annexe](#annexe)
+
+
 
 ## Introduction
 ### Contexte général du stage
