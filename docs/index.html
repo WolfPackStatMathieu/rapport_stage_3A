@@ -107,8 +107,91 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#contexte-général-du-stage" id="toc-contexte-général-du-stage" class="nav-link" data-scroll-target="#contexte-général-du-stage">Contexte général du stage</a></li>
+  <li><a href="#importance-de-la-cybersécurité-et-du-machine-learning-dans-ce-domaine" id="toc-importance-de-la-cybersécurité-et-du-machine-learning-dans-ce-domaine" class="nav-link" data-scroll-target="#importance-de-la-cybersécurité-et-du-machine-learning-dans-ce-domaine">Importance de la cybersécurité et du machine learning dans ce domaine</a></li>
+  <li><a href="#objectifs-du-stage" id="toc-objectifs-du-stage" class="nav-link" data-scroll-target="#objectifs-du-stage">Objectifs du stage</a></li>
+  </ul></li>
+  <li><a href="#découverte-et-contexte" id="toc-découverte-et-contexte" class="nav-link" data-scroll-target="#découverte-et-contexte">1. Découverte et Contexte</a>
+  <ul class="collapse">
+  <li><a href="#premiers-pas-dans-le-stage-enthousiasme-et-incertitude" id="toc-premiers-pas-dans-le-stage-enthousiasme-et-incertitude" class="nav-link" data-scroll-target="#premiers-pas-dans-le-stage-enthousiasme-et-incertitude">Premiers pas dans le stage : Enthousiasme et incertitude</a></li>
+  <li><a href="#introduction-à-la-cybersécurité-définition-et-importance" id="toc-introduction-à-la-cybersécurité-définition-et-importance" class="nav-link" data-scroll-target="#introduction-à-la-cybersécurité-définition-et-importance">Introduction à la cybersécurité : Définition et importance</a></li>
+  <li><a href="#présentation-de-léquipe-soc-et-du-système-dinformation-si" id="toc-présentation-de-léquipe-soc-et-du-système-dinformation-si" class="nav-link" data-scroll-target="#présentation-de-léquipe-soc-et-du-système-dinformation-si">Présentation de l’équipe SOC et du système d’information (SI)</a></li>
+  <li><a href="#compréhension-du-siem-et-des-logs" id="toc-compréhension-du-siem-et-des-logs" class="nav-link" data-scroll-target="#compréhension-du-siem-et-des-logs">Compréhension du SIEM et des logs</a></li>
+  </ul></li>
+  <li><a href="#recherche-et-collecte-de-données" id="toc-recherche-et-collecte-de-données" class="nav-link" data-scroll-target="#recherche-et-collecte-de-données">2. Recherche et Collecte de Données</a>
+  <ul class="collapse">
+  <li><a href="#attente-de-splunk-et-recherche-de-datasets-pertinents" id="toc-attente-de-splunk-et-recherche-de-datasets-pertinents" class="nav-link" data-scroll-target="#attente-de-splunk-et-recherche-de-datasets-pertinents">Attente de Splunk et recherche de datasets pertinents</a></li>
+  </ul></li>
+  <li><a href="#choix-des-problèmes-et-des-outils-de-machine-learning" id="toc-choix-des-problèmes-et-des-outils-de-machine-learning" class="nav-link" data-scroll-target="#choix-des-problèmes-et-des-outils-de-machine-learning">3. Choix des Problèmes et des Outils de Machine Learning</a>
+  <ul class="collapse">
+  <li><a href="#définition-des-problèmes-de-machine-learning-en-cybersécurité" id="toc-définition-des-problèmes-de-machine-learning-en-cybersécurité" class="nav-link" data-scroll-target="#définition-des-problèmes-de-machine-learning-en-cybersécurité">Définition des problèmes de machine learning en cybersécurité</a></li>
+  <li><a href="#introduction-à-scikit-learn-et-choix-des-modèles" id="toc-introduction-à-scikit-learn-et-choix-des-modèles" class="nav-link" data-scroll-target="#introduction-à-scikit-learn-et-choix-des-modèles">Introduction à Scikit-learn et choix des modèles</a></li>
+  <li><a href="#formation-à-linterprétabilité-des-modèles" id="toc-formation-à-linterprétabilité-des-modèles" class="nav-link" data-scroll-target="#formation-à-linterprétabilité-des-modèles">Formation à l’interprétabilité des modèles</a></li>
+  </ul></li>
+  <li><a href="#exploration-de-modèles-et-outils-avancés" id="toc-exploration-de-modèles-et-outils-avancés" class="nav-link" data-scroll-target="#exploration-de-modèles-et-outils-avancés">4. Exploration de Modèles et Outils Avancés</a>
+  <ul class="collapse">
+  <li><a href="#essais-avec-xgboost-pour-la-classification-des-malwares" id="toc-essais-avec-xgboost-pour-la-classification-des-malwares" class="nav-link" data-scroll-target="#essais-avec-xgboost-pour-la-classification-des-malwares">Essais avec XGBoost pour la classification des malwares</a></li>
+  <li><a href="#découverte-de-mlflow-et-utilisation-de-lapi" id="toc-découverte-de-mlflow-et-utilisation-de-lapi" class="nav-link" data-scroll-target="#découverte-de-mlflow-et-utilisation-de-lapi">Découverte de MLflow et utilisation de l’API</a></li>
+  <li><a href="#introduction-au-deep-learning-avec-le-livre-deep-learning-from-scratch-dlfs" id="toc-introduction-au-deep-learning-avec-le-livre-deep-learning-from-scratch-dlfs" class="nav-link" data-scroll-target="#introduction-au-deep-learning-avec-le-livre-deep-learning-from-scratch-dlfs">Introduction au deep learning avec le livre “Deep Learning from Scratch” (DLFS)</a></li>
+  <li><a href="#exploration-des-design-patterns-en-deep-learning" id="toc-exploration-des-design-patterns-en-deep-learning" class="nav-link" data-scroll-target="#exploration-des-design-patterns-en-deep-learning">Exploration des design patterns en deep learning</a></li>
+  </ul></li>
+  <li><a href="#anomaly-detection-et-modèles-de-classification" id="toc-anomaly-detection-et-modèles-de-classification" class="nav-link" data-scroll-target="#anomaly-detection-et-modèles-de-classification">5. Anomaly Detection et Modèles de Classification</a>
+  <ul class="collapse">
+  <li><a href="#détour-par-la-détection-danomalies-difficultés-et-recentrage" id="toc-détour-par-la-détection-danomalies-difficultés-et-recentrage" class="nav-link" data-scroll-target="#détour-par-la-détection-danomalies-difficultés-et-recentrage">Détour par la détection d’anomalies : Difficultés et recentrage</a></li>
+  <li><a href="#analyses-simples-avec-knn-et-clustering" id="toc-analyses-simples-avec-knn-et-clustering" class="nav-link" data-scroll-target="#analyses-simples-avec-knn-et-clustering">Analyses simples avec KNN et clustering</a></li>
+  <li><a href="#analyse-des-données-http-et-détection-des-attaques-ex.-ddos" id="toc-analyse-des-données-http-et-détection-des-attaques-ex.-ddos" class="nav-link" data-scroll-target="#analyse-des-données-http-et-détection-des-attaques-ex.-ddos">Analyse des données HTTP et détection des attaques (ex. DDOS)</a></li>
+  <li><a href="#focalisation-sur-lanalyse-des-url-et-compréhension-des-attaques" id="toc-focalisation-sur-lanalyse-des-url-et-compréhension-des-attaques" class="nav-link" data-scroll-target="#focalisation-sur-lanalyse-des-url-et-compréhension-des-attaques">Focalisation sur l’analyse des URL et compréhension des attaques</a></li>
+  </ul></li>
+  <li><a href="#exploration-darticles-scientifiques" id="toc-exploration-darticles-scientifiques" class="nav-link" data-scroll-target="#exploration-darticles-scientifiques">6. Exploration d’Articles Scientifiques</a>
+  <ul class="collapse">
+  <li><a href="#lecture-et-analyse-de-larticle-machine-learning-for-cybersecurity-applications-de-la-west-virginia-university-wvu" id="toc-lecture-et-analyse-de-larticle-machine-learning-for-cybersecurity-applications-de-la-west-virginia-university-wvu" class="nav-link" data-scroll-target="#lecture-et-analyse-de-larticle-machine-learning-for-cybersecurity-applications-de-la-west-virginia-university-wvu">Lecture et analyse de l’article “Machine Learning for Cybersecurity Applications” de la West Virginia University (WVU)</a></li>
+  </ul></li>
+  <li><a href="#modélisation-et-évaluation-des-modèles" id="toc-modélisation-et-évaluation-des-modèles" class="nav-link" data-scroll-target="#modélisation-et-évaluation-des-modèles">7. Modélisation et Évaluation des Modèles</a>
+  <ul class="collapse">
+  <li><a href="#modélisation-des-url-knn-svm-regression-logistique-cnn" id="toc-modélisation-des-url-knn-svm-regression-logistique-cnn" class="nav-link" data-scroll-target="#modélisation-des-url-knn-svm-regression-logistique-cnn">Modélisation des URL : KNN, SVM, regression logistique, CNN</a></li>
+  <li><a href="#utilisation-de-chatgpt-et-des-gpu-pour-accélérer-le-développement" id="toc-utilisation-de-chatgpt-et-des-gpu-pour-accélérer-le-développement" class="nav-link" data-scroll-target="#utilisation-de-chatgpt-et-des-gpu-pour-accélérer-le-développement">Utilisation de ChatGPT et des GPU pour accélérer le développement</a></li>
+  <li><a href="#organisation-des-priorités-et-gestion-des-expérimentations" id="toc-organisation-des-priorités-et-gestion-des-expérimentations" class="nav-link" data-scroll-target="#organisation-des-priorités-et-gestion-des-expérimentations">Organisation des priorités et gestion des expérimentations</a></li>
+  </ul></li>
+  <li><a href="#travail-avec-splunk-et-pipelines" id="toc-travail-avec-splunk-et-pipelines" class="nav-link" data-scroll-target="#travail-avec-splunk-et-pipelines">8. Travail avec Splunk et Pipelines</a>
+  <ul class="collapse">
+  <li><a href="#traitement-des-données-splunk-en-préproduction" id="toc-traitement-des-données-splunk-en-préproduction" class="nav-link" data-scroll-target="#traitement-des-données-splunk-en-préproduction">Traitement des données Splunk en préproduction</a></li>
+  <li><a href="#tokenization-des-url-et-limitations" id="toc-tokenization-des-url-et-limitations" class="nav-link" data-scroll-target="#tokenization-des-url-et-limitations">Tokenization des URL et limitations</a></li>
+  <li><a href="#développement-de-pipelines-et-utilisation-de-gridsearchcv" id="toc-développement-de-pipelines-et-utilisation-de-gridsearchcv" class="nav-link" data-scroll-target="#développement-de-pipelines-et-utilisation-de-gridsearchcv">Développement de pipelines et utilisation de GridsearchCV</a></li>
+  <li><a href="#évaluation-des-performances-des-modèles" id="toc-évaluation-des-performances-des-modèles" class="nav-link" data-scroll-target="#évaluation-des-performances-des-modèles">Évaluation des performances des modèles</a></li>
+  </ul></li>
+  <li><a href="#expérimentations-et-déploiement" id="toc-expérimentations-et-déploiement" class="nav-link" data-scroll-target="#expérimentations-et-déploiement">9. Expérimentations et Déploiement</a>
+  <ul class="collapse">
+  <li><a href="#utilisation-de-mlflow-pour-la-gestion-des-expérimentations" id="toc-utilisation-de-mlflow-pour-la-gestion-des-expérimentations" class="nav-link" data-scroll-target="#utilisation-de-mlflow-pour-la-gestion-des-expérimentations">Utilisation de MLFlow pour la gestion des expérimentations</a></li>
+  <li><a href="#apprentissage-à-requêter-et-déployer-un-modèle-via-une-api" id="toc-apprentissage-à-requêter-et-déployer-un-modèle-via-une-api" class="nav-link" data-scroll-target="#apprentissage-à-requêter-et-déployer-un-modèle-via-une-api">Apprentissage à requêter et déployer un modèle via une API</a></li>
+  <li><a href="#déploiement-sur-un-cluster-kubernetes-et-gestion-du-preprocessing" id="toc-déploiement-sur-un-cluster-kubernetes-et-gestion-du-preprocessing" class="nav-link" data-scroll-target="#déploiement-sur-un-cluster-kubernetes-et-gestion-du-preprocessing">Déploiement sur un cluster Kubernetes et gestion du preprocessing</a></li>
+  <li><a href="#introduction-à-metaflow-netflix-et-tests-préliminaires" id="toc-introduction-à-metaflow-netflix-et-tests-préliminaires" class="nav-link" data-scroll-target="#introduction-à-metaflow-netflix-et-tests-préliminaires">Introduction à Metaflow (Netflix) et tests préliminaires</a></li>
+  </ul></li>
+  <li><a href="#reproductibilité-et-mlops" id="toc-reproductibilité-et-mlops" class="nav-link" data-scroll-target="#reproductibilité-et-mlops">10. Reproductibilité et MLOps</a>
+  <ul class="collapse">
+  <li><a href="#importance-de-la-reproductibilité-et-utilisation-des-cours-de-lensae" id="toc-importance-de-la-reproductibilité-et-utilisation-des-cours-de-lensae" class="nav-link" data-scroll-target="#importance-de-la-reproductibilité-et-utilisation-des-cours-de-lensae">Importance de la reproductibilité et utilisation des cours de l’ENSAE</a></li>
+  <li><a href="#réalisation-dun-projet-mlops" id="toc-réalisation-dun-projet-mlops" class="nav-link" data-scroll-target="#réalisation-dun-projet-mlops">Réalisation d’un projet MLOps :</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a>
+  <ul class="collapse">
+  <li><a href="#bilan-du-stage-et-accomplissements" id="toc-bilan-du-stage-et-accomplissements" class="nav-link" data-scroll-target="#bilan-du-stage-et-accomplissements">Bilan du stage et accomplissements</a></li>
+  <li><a href="#perspectives-futures-améliorations-et-extensions-possibles" id="toc-perspectives-futures-améliorations-et-extensions-possibles" class="nav-link" data-scroll-target="#perspectives-futures-améliorations-et-extensions-possibles">Perspectives futures : Améliorations et extensions possibles</a></li>
+  <li><a href="#remerciements-et-réflexions-personnelles" id="toc-remerciements-et-réflexions-personnelles" class="nav-link" data-scroll-target="#remerciements-et-réflexions-personnelles">Remerciements et réflexions personnelles</a></li>
+  </ul></li>
+  <li><a href="#annexe" id="toc-annexe" class="nav-link" data-scroll-target="#annexe">Annexe</a>
+  <ul class="collapse">
+  <li><a href="#ressources-supplémentaires-notebooks-articles-tutoriels-dépôts-github" id="toc-ressources-supplémentaires-notebooks-articles-tutoriels-dépôts-github" class="nav-link" data-scroll-target="#ressources-supplémentaires-notebooks-articles-tutoriels-dépôts-github">Ressources supplémentaires : Notebooks, articles, tutoriels, dépôts Github</a></li>
+  <li><a href="#détails-techniques-des-implémentations-et-configurations" id="toc-détails-techniques-des-implémentations-et-configurations" class="nav-link" data-scroll-target="#détails-techniques-des-implémentations-et-configurations">Détails techniques des implémentations et configurations</a></li>
+  <li><a href="#bibliographie-et-références" id="toc-bibliographie-et-références" class="nav-link" data-scroll-target="#bibliographie-et-références">Bibliographie et références</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -132,10 +215,178 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<section id="contexte-général-du-stage" class="level3">
+<h3 class="anchored" data-anchor-id="contexte-général-du-stage">Contexte général du stage</h3>
+</section>
+<section id="importance-de-la-cybersécurité-et-du-machine-learning-dans-ce-domaine" class="level3">
+<h3 class="anchored" data-anchor-id="importance-de-la-cybersécurité-et-du-machine-learning-dans-ce-domaine">Importance de la cybersécurité et du machine learning dans ce domaine</h3>
+</section>
+<section id="objectifs-du-stage" class="level3">
+<h3 class="anchored" data-anchor-id="objectifs-du-stage">Objectifs du stage</h3>
+</section>
+</section>
+<section id="découverte-et-contexte" class="level2">
+<h2 class="anchored" data-anchor-id="découverte-et-contexte">1. Découverte et Contexte</h2>
+<section id="premiers-pas-dans-le-stage-enthousiasme-et-incertitude" class="level3">
+<h3 class="anchored" data-anchor-id="premiers-pas-dans-le-stage-enthousiasme-et-incertitude">Premiers pas dans le stage : Enthousiasme et incertitude</h3>
+</section>
+<section id="introduction-à-la-cybersécurité-définition-et-importance" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-à-la-cybersécurité-définition-et-importance">Introduction à la cybersécurité : Définition et importance</h3>
+</section>
+<section id="présentation-de-léquipe-soc-et-du-système-dinformation-si" class="level3">
+<h3 class="anchored" data-anchor-id="présentation-de-léquipe-soc-et-du-système-dinformation-si">Présentation de l’équipe SOC et du système d’information (SI)</h3>
+</section>
+<section id="compréhension-du-siem-et-des-logs" class="level3">
+<h3 class="anchored" data-anchor-id="compréhension-du-siem-et-des-logs">Compréhension du SIEM et des logs</h3>
+</section>
+</section>
+<section id="recherche-et-collecte-de-données" class="level2">
+<h2 class="anchored" data-anchor-id="recherche-et-collecte-de-données">2. Recherche et Collecte de Données</h2>
+<section id="attente-de-splunk-et-recherche-de-datasets-pertinents" class="level3">
+<h3 class="anchored" data-anchor-id="attente-de-splunk-et-recherche-de-datasets-pertinents">Attente de Splunk et recherche de datasets pertinents</h3>
+<ul>
+<li>Types de données : Réseau, logs, HTTP</li>
+<li>Sélection et préparation des datasets ### Présentation des premières données obtenues</li>
+</ul>
+</section>
+</section>
+<section id="choix-des-problèmes-et-des-outils-de-machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="choix-des-problèmes-et-des-outils-de-machine-learning">3. Choix des Problèmes et des Outils de Machine Learning</h2>
+<section id="définition-des-problèmes-de-machine-learning-en-cybersécurité" class="level3">
+<h3 class="anchored" data-anchor-id="définition-des-problèmes-de-machine-learning-en-cybersécurité">Définition des problèmes de machine learning en cybersécurité</h3>
+</section>
+<section id="introduction-à-scikit-learn-et-choix-des-modèles" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-à-scikit-learn-et-choix-des-modèles">Introduction à Scikit-learn et choix des modèles</h3>
+</section>
+<section id="formation-à-linterprétabilité-des-modèles" class="level3">
+<h3 class="anchored" data-anchor-id="formation-à-linterprétabilité-des-modèles">Formation à l’interprétabilité des modèles</h3>
+</section>
+</section>
+<section id="exploration-de-modèles-et-outils-avancés" class="level2">
+<h2 class="anchored" data-anchor-id="exploration-de-modèles-et-outils-avancés">4. Exploration de Modèles et Outils Avancés</h2>
+<section id="essais-avec-xgboost-pour-la-classification-des-malwares" class="level3">
+<h3 class="anchored" data-anchor-id="essais-avec-xgboost-pour-la-classification-des-malwares">Essais avec XGBoost pour la classification des malwares</h3>
+</section>
+<section id="découverte-de-mlflow-et-utilisation-de-lapi" class="level3">
+<h3 class="anchored" data-anchor-id="découverte-de-mlflow-et-utilisation-de-lapi">Découverte de MLflow et utilisation de l’API</h3>
+</section>
+<section id="introduction-au-deep-learning-avec-le-livre-deep-learning-from-scratch-dlfs" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-au-deep-learning-avec-le-livre-deep-learning-from-scratch-dlfs">Introduction au deep learning avec le livre “Deep Learning from Scratch” (DLFS)</h3>
+</section>
+<section id="exploration-des-design-patterns-en-deep-learning" class="level3">
+<h3 class="anchored" data-anchor-id="exploration-des-design-patterns-en-deep-learning">Exploration des design patterns en deep learning</h3>
+</section>
+</section>
+<section id="anomaly-detection-et-modèles-de-classification" class="level2">
+<h2 class="anchored" data-anchor-id="anomaly-detection-et-modèles-de-classification">5. Anomaly Detection et Modèles de Classification</h2>
+<section id="détour-par-la-détection-danomalies-difficultés-et-recentrage" class="level3">
+<h3 class="anchored" data-anchor-id="détour-par-la-détection-danomalies-difficultés-et-recentrage">Détour par la détection d’anomalies : Difficultés et recentrage</h3>
+</section>
+<section id="analyses-simples-avec-knn-et-clustering" class="level3">
+<h3 class="anchored" data-anchor-id="analyses-simples-avec-knn-et-clustering">Analyses simples avec KNN et clustering</h3>
+</section>
+<section id="analyse-des-données-http-et-détection-des-attaques-ex.-ddos" class="level3">
+<h3 class="anchored" data-anchor-id="analyse-des-données-http-et-détection-des-attaques-ex.-ddos">Analyse des données HTTP et détection des attaques (ex. DDOS)</h3>
+</section>
+<section id="focalisation-sur-lanalyse-des-url-et-compréhension-des-attaques" class="level3">
+<h3 class="anchored" data-anchor-id="focalisation-sur-lanalyse-des-url-et-compréhension-des-attaques">Focalisation sur l’analyse des URL et compréhension des attaques</h3>
+</section>
+</section>
+<section id="exploration-darticles-scientifiques" class="level2">
+<h2 class="anchored" data-anchor-id="exploration-darticles-scientifiques">6. Exploration d’Articles Scientifiques</h2>
+<section id="lecture-et-analyse-de-larticle-machine-learning-for-cybersecurity-applications-de-la-west-virginia-university-wvu" class="level3">
+<h3 class="anchored" data-anchor-id="lecture-et-analyse-de-larticle-machine-learning-for-cybersecurity-applications-de-la-west-virginia-university-wvu">Lecture et analyse de l’article “Machine Learning for Cybersecurity Applications” de la West Virginia University (WVU)</h3>
+<ul>
+<li>Synthèse des méthodes et résultats principaux ### Étude de “A Comprehensive Review of Anomaly Detection in Web Logs” du Hasso Plattner Institute (HPI)</li>
+<li>Principales techniques d’anomaly detection discutées ### Analyse de l’article “CRISIS2020_EasyChair_PID_011”</li>
+<li>Points clés et implications pour la cybersécurité ### Exploration de “Conf_SIN2022__SWAF” pour le développement d’un pare-feu applicatif basé sur du machine learning</li>
+<li>Innovations et applications potentielles</li>
+</ul>
+</section>
+</section>
+<section id="modélisation-et-évaluation-des-modèles" class="level2">
+<h2 class="anchored" data-anchor-id="modélisation-et-évaluation-des-modèles">7. Modélisation et Évaluation des Modèles</h2>
+<section id="modélisation-des-url-knn-svm-regression-logistique-cnn" class="level3">
+<h3 class="anchored" data-anchor-id="modélisation-des-url-knn-svm-regression-logistique-cnn">Modélisation des URL : KNN, SVM, regression logistique, CNN</h3>
+</section>
+<section id="utilisation-de-chatgpt-et-des-gpu-pour-accélérer-le-développement" class="level3">
+<h3 class="anchored" data-anchor-id="utilisation-de-chatgpt-et-des-gpu-pour-accélérer-le-développement">Utilisation de ChatGPT et des GPU pour accélérer le développement</h3>
+</section>
+<section id="organisation-des-priorités-et-gestion-des-expérimentations" class="level3">
+<h3 class="anchored" data-anchor-id="organisation-des-priorités-et-gestion-des-expérimentations">Organisation des priorités et gestion des expérimentations</h3>
+</section>
+</section>
+<section id="travail-avec-splunk-et-pipelines" class="level2">
+<h2 class="anchored" data-anchor-id="travail-avec-splunk-et-pipelines">8. Travail avec Splunk et Pipelines</h2>
+<section id="traitement-des-données-splunk-en-préproduction" class="level3">
+<h3 class="anchored" data-anchor-id="traitement-des-données-splunk-en-préproduction">Traitement des données Splunk en préproduction</h3>
+</section>
+<section id="tokenization-des-url-et-limitations" class="level3">
+<h3 class="anchored" data-anchor-id="tokenization-des-url-et-limitations">Tokenization des URL et limitations</h3>
+</section>
+<section id="développement-de-pipelines-et-utilisation-de-gridsearchcv" class="level3">
+<h3 class="anchored" data-anchor-id="développement-de-pipelines-et-utilisation-de-gridsearchcv">Développement de pipelines et utilisation de GridsearchCV</h3>
+</section>
+<section id="évaluation-des-performances-des-modèles" class="level3">
+<h3 class="anchored" data-anchor-id="évaluation-des-performances-des-modèles">Évaluation des performances des modèles</h3>
+</section>
+</section>
+<section id="expérimentations-et-déploiement" class="level2">
+<h2 class="anchored" data-anchor-id="expérimentations-et-déploiement">9. Expérimentations et Déploiement</h2>
+<section id="utilisation-de-mlflow-pour-la-gestion-des-expérimentations" class="level3">
+<h3 class="anchored" data-anchor-id="utilisation-de-mlflow-pour-la-gestion-des-expérimentations">Utilisation de MLFlow pour la gestion des expérimentations</h3>
+</section>
+<section id="apprentissage-à-requêter-et-déployer-un-modèle-via-une-api" class="level3">
+<h3 class="anchored" data-anchor-id="apprentissage-à-requêter-et-déployer-un-modèle-via-une-api">Apprentissage à requêter et déployer un modèle via une API</h3>
+</section>
+<section id="déploiement-sur-un-cluster-kubernetes-et-gestion-du-preprocessing" class="level3">
+<h3 class="anchored" data-anchor-id="déploiement-sur-un-cluster-kubernetes-et-gestion-du-preprocessing">Déploiement sur un cluster Kubernetes et gestion du preprocessing</h3>
+</section>
+<section id="introduction-à-metaflow-netflix-et-tests-préliminaires" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-à-metaflow-netflix-et-tests-préliminaires">Introduction à Metaflow (Netflix) et tests préliminaires</h3>
+</section>
+</section>
+<section id="reproductibilité-et-mlops" class="level2">
+<h2 class="anchored" data-anchor-id="reproductibilité-et-mlops">10. Reproductibilité et MLOps</h2>
+<section id="importance-de-la-reproductibilité-et-utilisation-des-cours-de-lensae" class="level3">
+<h3 class="anchored" data-anchor-id="importance-de-la-reproductibilité-et-utilisation-des-cours-de-lensae">Importance de la reproductibilité et utilisation des cours de l’ENSAE</h3>
+</section>
+<section id="réalisation-dun-projet-mlops" class="level3">
+<h3 class="anchored" data-anchor-id="réalisation-dun-projet-mlops">Réalisation d’un projet MLOps :</h3>
+<ul>
+<li>Déploiement d’une API sur Kubernetes</li>
+<li>Système d’entraînement et stockage des modèles ### Exploration de Spark pour le calcul et le streaming</li>
+</ul>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<section id="bilan-du-stage-et-accomplissements" class="level3">
+<h3 class="anchored" data-anchor-id="bilan-du-stage-et-accomplissements">Bilan du stage et accomplissements</h3>
+</section>
+<section id="perspectives-futures-améliorations-et-extensions-possibles" class="level3">
+<h3 class="anchored" data-anchor-id="perspectives-futures-améliorations-et-extensions-possibles">Perspectives futures : Améliorations et extensions possibles</h3>
+</section>
+<section id="remerciements-et-réflexions-personnelles" class="level3">
+<h3 class="anchored" data-anchor-id="remerciements-et-réflexions-personnelles">Remerciements et réflexions personnelles</h3>
+</section>
+</section>
+<section id="annexe" class="level2">
+<h2 class="anchored" data-anchor-id="annexe">Annexe</h2>
+<section id="ressources-supplémentaires-notebooks-articles-tutoriels-dépôts-github" class="level3">
+<h3 class="anchored" data-anchor-id="ressources-supplémentaires-notebooks-articles-tutoriels-dépôts-github">Ressources supplémentaires : Notebooks, articles, tutoriels, dépôts Github</h3>
+</section>
+<section id="détails-techniques-des-implémentations-et-configurations" class="level3">
+<h3 class="anchored" data-anchor-id="détails-techniques-des-implémentations-et-configurations">Détails techniques des implémentations et configurations</h3>
+</section>
+<section id="bibliographie-et-références" class="level3">
+<h3 class="anchored" data-anchor-id="bibliographie-et-références">Bibliographie et références</h3>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
