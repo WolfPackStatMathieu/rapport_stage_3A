@@ -6,6 +6,8 @@ description: "Un rapport détaillé sur mon stage de 3e année au SOC, couvrant 
 keywords: ["cybersécurité", "machine learning", "stage", "rapport"]
 ---
 
+[Download PDF](docs/rapport_stage_3A.pdf)
+
 ## Table des matières
 
 - [Introduction](#introduction)
@@ -25,6 +27,8 @@ keywords: ["cybersécurité", "machine learning", "stage", "rapport"]
 
 
 ## Introduction
+
+
 ### Contexte général du stage
 ### Importance de la cybersécurité et du machine learning dans ce domaine
 ### Objectifs du stage
