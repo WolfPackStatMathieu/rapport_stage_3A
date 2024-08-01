@@ -7,6 +7,27 @@
     "text": "About this site"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Rapport de stage 3A",
+    "section": "",
+    "text": "Download PDF"
+  },
+  {
+    "objectID": "index.html#table-des-matières",
+    "href": "index.html#table-des-matières",
+    "title": "Rapport de stage 3A",
+    "section": "Table des matières",
+    "text": "Table des matières\n\nIntroduction\nDécouverte et Contexte\nRecherche et Collecte de Données\nChoix des Problèmes et des Outils de Machine Learning\nExploration de Modèles et Outils Avancés\nAnomaly Detection et Modèles de Classification\nExploration d’Articles Scientifiques\nModélisation et Évaluation des Modèles\nTravail avec Splunk et Pipelines\nExpérimentations et Déploiement\nReproductibilité et MLOps\nConclusion\nAnnexe"
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Rapport de stage 3A",
+    "section": "Introduction",
+    "text": "Introduction\n\nContexte général du stage\n\n\nImportance de la cybersécurité et du machine learning dans ce domaine\n\n\nObjectifs du stage"
+  },
+  {
     "objectID": "index.html#découverte-et-contexte",
     "href": "index.html#découverte-et-contexte",
     "title": "Rapport de stage 3A",
@@ -89,26 +110,5 @@
     "title": "Rapport de stage 3A",
     "section": "Annexe",
     "text": "Annexe\n\nRessources supplémentaires : Notebooks, articles, tutoriels, dépôts Github\n\n\nDétails techniques des implémentations et configurations\n\n\nBibliographie et références"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Rapport de stage 3A",
-    "section": "",
-    "text": "Introduction\nDécouverte et Contexte\nRecherche et Collecte de Données\nChoix des Problèmes et des Outils de Machine Learning\nExploration de Modèles et Outils Avancés\nAnomaly Detection et Modèles de Classification\nExploration d’Articles Scientifiques\nModélisation et Évaluation des Modèles\nTravail avec Splunk et Pipelines\nExpérimentations et Déploiement\nReproductibilité et MLOps\nConclusion\nAnnexe"
-  },
-  {
-    "objectID": "index.html#table-des-matières",
-    "href": "index.html#table-des-matières",
-    "title": "Rapport de stage 3A",
-    "section": "",
-    "text": "Introduction\nDécouverte et Contexte\nRecherche et Collecte de Données\nChoix des Problèmes et des Outils de Machine Learning\nExploration de Modèles et Outils Avancés\nAnomaly Detection et Modèles de Classification\nExploration d’Articles Scientifiques\nModélisation et Évaluation des Modèles\nTravail avec Splunk et Pipelines\nExpérimentations et Déploiement\nReproductibilité et MLOps\nConclusion\nAnnexe"
-  },
-  {
-    "objectID": "index.html#introduction",
-    "href": "index.html#introduction",
-    "title": "Rapport de stage 3A",
-    "section": "Introduction",
-    "text": "Introduction\n\nContexte général du stage\n\n\nImportance de la cybersécurité et du machine learning dans ce domaine\n\n\nObjectifs du stage"
   }
 ]
