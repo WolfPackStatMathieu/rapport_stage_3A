@@ -39,7 +39,7 @@
     "href": "index.html#recherche-et-collecte-de-données",
     "title": "Rapport de stage 3A",
     "section": "2. Recherche et Collecte de Données",
-    "text": "2. Recherche et Collecte de Données\n\nAttente de Splunk et recherche de datasets pertinents\n\nTypes de données : Réseau, logs, HTTP\nSélection et préparation des datasets ### Présentation des premières données obtenues"
+    "text": "2. Recherche et Collecte de Données\n\nAttente de Splunk et recherche de datasets pertinents\n\nTypes de données : Réseau, logs, HTTP\nSélection et préparation des datasets\n\n\n\nPrésentation des premières données obtenues"
   },
   {
     "objectID": "index.html#choix-des-problèmes-et-des-outils-de-machine-learning",
@@ -67,7 +67,7 @@
     "href": "index.html#exploration-darticles-scientifiques",
     "title": "Rapport de stage 3A",
     "section": "6. Exploration d’Articles Scientifiques",
-    "text": "6. Exploration d’Articles Scientifiques\n\nLecture et analyse de l’article “Machine Learning for Cybersecurity Applications” de la West Virginia University (WVU)\n\nSynthèse des méthodes et résultats principaux ### Étude de “A Comprehensive Review of Anomaly Detection in Web Logs” du Hasso Plattner Institute (HPI)\nPrincipales techniques d’anomaly detection discutées ### Analyse de l’article “CRISIS2020_EasyChair_PID_011”\nPoints clés et implications pour la cybersécurité ### Exploration de “Conf_SIN2022__SWAF” pour le développement d’un pare-feu applicatif basé sur du machine learning\nInnovations et applications potentielles"
+    "text": "6. Exploration d’Articles Scientifiques\n\nLecture et analyse de l’article “Machine Learning for Cybersecurity Applications” de la West Virginia University (WVU)\n\nSynthèse des méthodes et résultats principaux\n\n\n\nÉtude de “A Comprehensive Review of Anomaly Detection in Web Logs” du Hasso Plattner Institute (HPI)\n\nPrincipales techniques d’anomaly detection discutées\n\n\n\nAnalyse de l’article “CRISIS2020_EasyChair_PID_011”\n\nPoints clés et implications pour la cybersécurité\n\n\n\nExploration de “Conf_SIN2022__SWAF” pour le développement d’un pare-feu applicatif basé sur du machine learning\n\nInnovations et applications potentielles"
   },
   {
     "objectID": "index.html#modélisation-et-évaluation-des-modèles",
@@ -95,7 +95,7 @@
     "href": "index.html#reproductibilité-et-mlops",
     "title": "Rapport de stage 3A",
     "section": "10. Reproductibilité et MLOps",
-    "text": "10. Reproductibilité et MLOps\n\nImportance de la reproductibilité et utilisation des cours de l’ENSAE\n\n\nRéalisation d’un projet MLOps :\n\nDéploiement d’une API sur Kubernetes\nSystème d’entraînement et stockage des modèles ### Exploration de Spark pour le calcul et le streaming"
+    "text": "10. Reproductibilité et MLOps\n\nImportance de la reproductibilité et utilisation des cours de l’ENSAE\n\n\nRéalisation d’un projet MLOps :\n\nDéploiement d’une API sur Kubernetes\nSystème d’entraînement et stockage des modèles\n\n\n\nExploration de Spark pour le calcul et le streaming"
   },
   {
     "objectID": "index.html#conclusion",

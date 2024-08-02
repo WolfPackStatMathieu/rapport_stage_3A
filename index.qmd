@@ -11,16 +11,16 @@ keywords: ["cybersécurité", "machine learning", "stage", "rapport"]
 ## Table des matières
 
 - [Introduction](#introduction)
-- [Découverte et Contexte](#1-découverte-et-contexte)
-- [Recherche et Collecte de Données](#2-recherche-et-collecte-de-données)
-- [Choix des Problèmes et des Outils de Machine Learning](#3-choix-des-problèmes-et-des-outils-de-machine-learning)
-- [Exploration de Modèles et Outils Avancés](#4-exploration-de-modèles-et-outils-avancés)
-- [Anomaly Detection et Modèles de Classification](#5-anomaly-detection-et-modèles-de-classification)
-- [Exploration d'Articles Scientifiques](#6-exploration-darticles-scientifiques)
-- [Modélisation et Évaluation des Modèles](#7-modélisation-et-évaluation-des-modèles)
-- [Travail avec Splunk et Pipelines](#8-travail-avec-splunk-et-pipelines)
-- [Expérimentations et Déploiement](#9-expérimentations-et-déploiement)
-- [Reproductibilité et MLOps](#10-reproductibilité-et-mlops)
+- [Découverte et Contexte](#découverte-et-contexte)
+- [Recherche et Collecte de Données](#recherche-et-collecte-de-données)
+- [Choix des Problèmes et des Outils de Machine Learning](#choix-des-problèmes-et-des-outils-de-machine-learning)
+- [Exploration de Modèles et Outils Avancés](#exploration-de-modèles-et-outils-avancés)
+- [Anomaly Detection et Modèles de Classification](#anomaly-detection-et-modèles-de-classification)
+- [Exploration d'Articles Scientifiques](#exploration-darticles-scientifiques)
+- [Modélisation et Évaluation des Modèles](#modélisation-et-évaluation-des-modèles)
+- [Travail avec Splunk et Pipelines](#travail-avec-splunk-et-pipelines)
+- [Expérimentations et Déploiement](#expérimentations-et-déploiement)
+- [Reproductibilité et MLOps](#reproductibilité-et-mlops)
 - [Conclusion](#conclusion)
 - [Annexe](#annexe)
 
@@ -41,8 +41,10 @@ keywords: ["cybersécurité", "machine learning", "stage", "rapport"]
 
 ## 2. Recherche et Collecte de Données
 ### Attente de Splunk et recherche de datasets pertinents
+
   - Types de données : Réseau, logs, HTTP
   - Sélection et préparation des datasets
+
 ### Présentation des premières données obtenues
 
 ## 3. Choix des Problèmes et des Outils de Machine Learning
@@ -65,10 +67,13 @@ keywords: ["cybersécurité", "machine learning", "stage", "rapport"]
 ## 6. Exploration d'Articles Scientifiques
 ### Lecture et analyse de l'article "Machine Learning for Cybersecurity Applications" de la West Virginia University (WVU)
   - Synthèse des méthodes et résultats principaux
+
 ### Étude de "A Comprehensive Review of Anomaly Detection in Web Logs" du Hasso Plattner Institute (HPI)
   - Principales techniques d'anomaly detection discutées
+
 ### Analyse de l'article "CRISIS2020_EasyChair_PID_011"
   - Points clés et implications pour la cybersécurité
+
 ### Exploration de "Conf_SIN2022__SWAF" pour le développement d'un pare-feu applicatif basé sur du machine learning
   - Innovations et applications potentielles
 
@@ -94,6 +99,7 @@ keywords: ["cybersécurité", "machine learning", "stage", "rapport"]
 ### Réalisation d'un projet MLOps :
   - Déploiement d’une API sur Kubernetes
   - Système d’entraînement et stockage des modèles
+  
 ### Exploration de Spark pour le calcul et le streaming
 
 ## Conclusion
