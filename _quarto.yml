@@ -7,13 +7,13 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+      - text: "Télécharger PDF"
+        href: rapport.pdf # Assurez-vous que le fichier rapport.pdf est dans le répertoire docs
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
-
-
-
