@@ -9,7 +9,7 @@ website:
         text: Home
       - href: about.qmd
         text: About
-      - href: rapport.pdf # Assurez-vous que le fichier rapport.pdf est dans le répertoire docs
+      - href: index.pdf # Assurez-vous que le fichier rapport.pdf est dans le répertoire docs
         text: "Télécharger PDF"
 
 format:
