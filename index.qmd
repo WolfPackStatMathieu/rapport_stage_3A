@@ -63,16 +63,13 @@ Les enjeux de la cybersécurité peuvent se révéler particulièrement lourds, 
 <!-- - Pourquoi la cybersécurité et le machine learning sont-ils cruciaux pour les entreprises aujourd'hui ? -->
 La cybersécurité et le machine learning sont cruciaux pour les entreprises aujourd'hui pour plusieurs raisons. D'une part, la cybersécurité est essentielle pour protéger les données sensibles contre les cyberattaques qui sont de plus en plus sophistiquées et fréquentes. Les conséquences d'une faille de sécurité peuvent être dévastatrices pour l'Insee, incluant des pertes de données, des dommages à la réputation et la crédibilité de l'Institut, et des impacts sur les utilisateurs.
 
-[![HarfangLab, déployé sur le poste de travail](figures/HarfangLab.png "HarfangLab"){width=40%}](https://harfanglab.io/)
 
 
 D'autre part, le machine learning offre des outils puissants pour détecter et prévenir les menaces en temps réel. Grâce à ses capacités de traitement et d'analyse de vastes quantités de données, le machine learning peut identifier des modèles et des anomalies que les méthodes traditionnelles pourraient manquer. Par exemple, la DSI a déployé sur le poste de chaque agent HarfangLab, un outil de sécurité informatique reposant sur des modèles de machine learning pour détecter la présence de logiciels malveillants, des malware, et permettant d'isoler le poste compromis.
 
+[![HarfangLab, déployé sur le poste de travail](figures/HarfangLab.png "HarfangLab"){width=40%}](https://harfanglab.io/)
 
-Cette technologie permet aux entreprises de réagir plus rapidement et de manière plus efficace aux cybermenaces.
-
-En intégrant le machine learning dans les stratégies de cybersécurité, les entreprises peuvent non seulement améliorer leur défense contre les attaques, mais aussi optimiser leurs ressources et réduire les coûts liés à la sécurité. En résumé, la combinaison de la cybersécurité et du machine learning est devenue indispensable pour garantir la protection et la pérennité des systèmes d'information des entreprises.
-
+Le machine learning permet également de réduire le travail des analystes du SOC en classifiant automatiquement les requêtes comme bégnines ou malveillante.
 
 
 
