@@ -246,6 +246,9 @@ L’Insee a renforcé récemment ses capacités opérationnelles en terme de cyb
 
 - Pourquoi ces ressources sont-elles utiles ?
 
+#### Gantt
+![Gant](figures/gantt.png)
+
 ### Détails techniques des implémentations et configurations
 
 - Pourquoi ces détails techniques sont-ils importants pour la compréhension de votre travail ?

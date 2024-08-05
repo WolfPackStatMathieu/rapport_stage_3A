@@ -11,7 +11,7 @@
 <meta name="keywords" content="cybersécurité, machine learning, stage, rapport">
 <meta name="description" content="Un rapport détaillé sur mon stage de 3e année au SOC, couvrant divers aspects de la cybersécurité et du machine learning.">
 
-<title>Rapport de stage 3A – rapport</title>
+<title>Rapport de stage 3A: Machine Learning appliqué à la cybersécurité – rapport</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -212,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Rapport de stage 3A</h1>
+<h1 class="title">Rapport de stage 3A: Machine Learning appliqué à la cybersécurité</h1>
 </div>
 
 <div>
@@ -256,23 +256,43 @@ ul.task-list li input[type="checkbox"] {
 <section id="table-des-matières" class="level2">
 <h2 class="anchored" data-anchor-id="table-des-matières">Table des matières</h2>
 <ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#découverte-et-contexte">Découverte et Contexte</a></li>
-<li><a href="#recherche-et-collecte-de-données">Recherche et Collecte de Données</a></li>
-<li><a href="#choix-des-problèmes-et-des-outils-de-machine-learning">Choix des Problèmes et des Outils de Machine Learning</a></li>
-<li><a href="#exploration-de-modèles-et-outils-avancés">Exploration de Modèles et Outils Avancés</a></li>
-<li><a href="#anomaly-detection-et-modèles-de-classification">Anomaly Detection et Modèles de Classification</a></li>
-<li><a href="#exploration-darticles-scientifiques">Exploration d’Articles Scientifiques</a></li>
-<li><a href="#modélisation-et-évaluation-des-modèles">Modélisation et Évaluation des Modèles</a></li>
-<li><a href="#travail-avec-splunk-et-pipelines">Travail avec Splunk et Pipelines</a></li>
-<li><a href="#expérimentations-et-déploiement">Expérimentations et Déploiement</a></li>
-<li><a href="#reproductibilité-et-mlops">Reproductibilité et MLOps</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
-<li><a href="#annexe">Annexe</a></li>
+<li><p><a href="#introduction">Introduction</a></p></li>
+<li><p><a href="#découverte-et-contexte">Découverte et Contexte</a></p></li>
+<li><p><a href="#recherche-et-collecte-de-données">Recherche et Collecte de Données</a></p></li>
+<li><p><a href="#choix-des-problèmes-et-des-outils-de-machine-learning">Choix des Problèmes et des Outils de Machine Learning</a></p></li>
+<li><p><a href="#exploration-de-modèles-et-outils-avancés">Exploration de Modèles et Outils Avancés</a></p></li>
+<li><p><a href="#anomaly-detection-et-modèles-de-classification">Anomaly Detection et Modèles de Classification</a></p></li>
+<li><p><a href="#exploration-darticles-scientifiques">Exploration d’Articles Scientifiques</a></p></li>
+<li><p><a href="#modélisation-et-évaluation-des-modèles">Modélisation et Évaluation des Modèles</a></p></li>
+<li><p><a href="#travail-avec-splunk-et-pipelines">Travail avec Splunk et Pipelines</a></p></li>
+<li><p><a href="#expérimentations-et-déploiement">Expérimentations et Déploiement</a></p></li>
+<li><p><a href="#reproductibilité-et-mlops">Reproductibilité et MLOps</a></p></li>
+<li><p><a href="#conclusion">Conclusion</a></p></li>
+<li><p><a href="#annexe">Annexe</a></p></li>
+<li><p>Présentation du stagiaire et du maître de stage :</p></li>
+<li><p>stagiaire: Mathieu THOMASSIN</p></li>
+<li><p>maître de stage: Michael ORSUCCI</p></li>
+<li><p>Titre du stage: Machine Learning appliqué à la cybersécurité</p></li>
 </ul>
 </section>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>L’Insee a renforcé récemment ses capacités opérationnelles en terme de cybersécurité via notamment la création de son SOC (Security Operation Center) en septembre 2023. Devant la quantité de données et leur diversité et face aux évolutions des techniques et tactiques des attaquants, les méthodes de détection de cyberattaques peuvent avoir des limites. L’application d’algorithmes de Machine Learning peut aider les analystes SOC à repérer des attaques. Se déroulant au sein de l’équipe SOC construite depuis peu, le stage va permettre d’appliquer des techniques de Machine Learning et de deep learning sur des jeux de données réelles, afin de participer à la détection d’incidents de sécurité.</p>
+<ul>
+<li><p>Présentation de l’organisation : L’Insee a renforcé récemment ses capacités opérationnelles en terme de cybersécurité via notamment la création de son SOC (Security Operation Center) en septembre 2023. Cette équipe est répartie entre les sites de la DR de Nantes et la DR de Metz et a pour objectif de renforcer la sécurité du SI.</p></li>
+<li><p>Contexte général du stage: Devant la quantité de données et leur diversité et face aux évolutions des techniques et tactiques des attaquants, les méthodes de détection de cyberattaques peuvent avoir des limites. L’application d’algorithmes de Machine Learning peut aider les analystes SOC à repérer des attaques. Le stage va permettre d’appliquer des techniques de Machine Learning et de deep learning sur des jeux de données réelles, afin de participer à la détection d’incidents de sécurité.</p></li>
+<li><p>Objectifs du Stage :</p></li>
+<li><p>Objectifs principaux: Il s’agit d’appliquer des techniques de détection de requêtes malveillantes arrivant dans le SI de l’Insee. Les requêtes arrivant au sein du SI peuvent être centralisées par un SIEM (Security information and event management).</p></li>
+<li><p>Résultats attendus:</p></li>
+<li><p>Offrir un service s’ajoutant au SIEM permettant d’identifier des requêtes malveillantes.</p></li>
+<li><p>Pouvoir comparer différents meilleurs modèles (au sens d’une recherche dans les hyper paramètres) entre eux</p></li>
+<li><p>Favoriser les bonnes pratiques du MLOps: reproductibilité, contrôle de version, automatisation, surveillance, collaboration</p></li>
+<li><p>Étendre la méthodologie à des jeux de données publics différents</p></li>
+<li><p>Explorer les algorithmes de détection d’anomalie</p></li>
+<li><p>Importance de la mission pour l’Insee: à titre d’exemple, l’Insee détient l’application Elire. Une attaque réussie sur cette application perturberait le bon déroulement de la vie démocratique.</p></li>
+<li><p>Impact potentiel des résultats:</p></li>
+<li><p>La détection de requêtes malveillantes pourrait permettre de déjouer une attaque en cours.</p></li>
+</ul>
 <section id="contexte-général-du-stage" class="level3">
 <h3 class="anchored" data-anchor-id="contexte-général-du-stage">Contexte général du stage</h3>
 <ul>
@@ -570,6 +590,15 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Pourquoi ces ressources sont-elles utiles ?</li>
 </ul>
+<section id="gantt" class="level4">
+<h4 class="anchored" data-anchor-id="gantt">Gantt</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/gantt.png" class="img-fluid figure-img"></p>
+<figcaption>Gant</figcaption>
+</figure>
+</div>
+</section>
 </section>
 <section id="détails-techniques-des-implémentations-et-configurations" class="level3">
 <h3 class="anchored" data-anchor-id="détails-techniques-des-implémentations-et-configurations">Détails techniques des implémentations et configurations</h3>
