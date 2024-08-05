@@ -33,10 +33,10 @@ keywords: ["cybersécurité", "machine learning", "stage", "rapport"]
 
 L’Insee a renforcé récemment ses capacités opérationnelles en terme de cybersécurité via notamment la création de son SOC (Security Operation Center) en septembre 2023. Devant la quantité de données et leur diversité et face aux évolutions des techniques et tactiques des attaquants, les méthodes de détection de cyberattaques peuvent avoir des limites. L’application d’algorithmes de Machine Learning peut aider les analystes SOC à repérer des attaques. Se déroulant au sein de l’équipe SOC construite depuis peu, le stage va permettre d’appliquer des techniques de Machine Learning et de deep learning sur des jeux de données réelles, afin de participer à la détection d’incidents de sécurité.
 
-- Présentation de l'organisation : L'Insee a renforcé récemment ses capacités opérationnelles en terme de cybersécurité via notamment la création de son SOC (Security Operation Center) en septembre 2023. Cette équipe est répartie entre les sites de la DR de Nantes et la DR de Metz et a pour objectif de renforcer la sécurité du SI.
-- Contexte général du stage: Devant la quantité de données et leur diversité et face aux évolutions des techniques et tactiques des attaquants, les méthodes de détection de cyberattaques peuvent avoir des limites. L'application d'algorithmes de Machine Learning peut aider les analystes SOC à repérer des attaques. Le stage va permettre d'appliquer des techniques de Machine Learning et de deep learning sur des jeux de données réelles, afin de participer à la détection d'incidents de sécurité.
+- Présentation de l'organisation : L'Insee a renforcé récemment ses capacités opérationnelles en terme de cybersécurité via notamment la création de son SOC (Security Operation Center) en septembre 2023. Cette équipe est répartie entre les sites de la DR de Nantes et la DR de Metz et a pour objectif de renforcer la sécurité du système d'information (SI).
+- Contexte général du stage: Devant la quantité de données et leur diversité et face aux évolutions des techniques et tactiques des attaquants, les méthodes de détection de cyberattaques peuvent avoir des limites. L'application d'algorithmes de Machine Learning peut aider les analystes SOC à repérer des attaques. Le stage avait donc pour but de permettre d'appliquer des techniques de Machine Learning et de deep learning sur des jeux de données réelles, afin de participer à la détection d'incidents de sécurité.
 - Objectifs du Stage :
-- Objectifs principaux: Il s'agit d'appliquer des techniques de détection de requêtes malveillantes arrivant dans le SI de l'Insee. Les requêtes arrivant au sein du SI peuvent être centralisées par un SIEM (Security information and event management).
+- Objectifs principaux: Il s'agissait d'appliquer des techniques de détection de requêtes malveillantes arrivant dans le SI de l'Insee. Les requêtes arrivant au sein du SI peuvent être centralisées par un SIEM (Security information and event management).
 - Résultats attendus:
 * Offrir un service s'ajoutant au SIEM permettant d'identifier des requêtes malveillantes.
 * Pouvoir comparer différents meilleurs modèles (au sens d'une recherche dans les hyper paramètres) entre eux
@@ -44,17 +44,25 @@ L’Insee a renforcé récemment ses capacités opérationnelles en terme de cyb
 * Étendre la méthodologie à des jeux de données publics différents
 * Explorer les algorithmes de détection d'anomalie
 
-- Importance de la mission pour l'Insee: à titre d'exemple, l'Insee détient l'application Elire. Une attaque réussie sur cette application perturberait le bon déroulement de la vie démocratique.
-- Impact potentiel des résultats:
-* La détection de requêtes malveillantes pourrait permettre de déjouer une attaque en cours.
+- Importance de la mission pour l'Insee: à titre d'exemple, l'Insee détient l'application Elire. Une attaque réussie sur cette application perturberait le bon déroulement de la vie démocratique. 
+
 
 ### Contexte général du stage
 
-- Pourquoi ce stage est-il pertinent dans votre parcours académique et professionnel ?
+<!-- - Pourquoi ce stage est-il pertinent dans votre parcours académique et professionnel ? -->
+
+Ce stage s'inscrit pleinement dans le parcours que j'ai progressivement construit tout au long de ma carrière à l'Insee. Débutant il y a plusieurs années sur un poste de contrôleur-programmeur, j'ai pu apprécier les cours d'informatique et de statistiques pendant mon parcours à l'Ensai. J'y ai suivi les options menant progressivement à se spécialiser jusqu'au master en Informatique et traitement des données. 
+
+Au cours de ma préparation et de l'obtention de la qualification d'analyste, ma curiosité pour la sécurité des systèmes d'information s'est particulièrement développée. L'analyse des requêtes au sein d'un réseau soulève de nombreuses questions : volume des données, méthode de traitement statistique avec le machine learning, rapidité et efficacité de ce traitement. 
+
+Les enjeux de la cybersécurité peuvent se révéler particulièrement lourds, comme on peut le découvrir dans les journaux pour de nombreuses organisations. Ce stage au SOC représente une opportunité unique de confronter ces intérêts théoriques à des problématiques concrètes de cybersécurité, renforçant ainsi mes compétences et ma compréhension dans un domaine en pleine expansion.
+
 
 ### Importance de la cybersécurité et du machine learning dans ce domaine
 
-- Pourquoi la cybersécurité et le machine learning sont-ils cruciaux pour les entreprises aujourd'hui ?
+<!-- - Pourquoi la cybersécurité et le machine learning sont-ils cruciaux pour les entreprises aujourd'hui ? -->
+
+
 
 ### Objectifs du stage
 
