@@ -25,90 +25,90 @@
     "href": "index.html#introduction",
     "title": "Rapport de stage 3A",
     "section": "Introduction",
-    "text": "Introduction\n\nContexte général du stage\n\n\nImportance de la cybersécurité et du machine learning dans ce domaine\n\n\nObjectifs du stage"
+    "text": "Introduction\n\nContexte général du stage\n\nPourquoi ce stage est-il pertinent dans votre parcours académique et professionnel ?\n\n\n\nImportance de la cybersécurité et du machine learning dans ce domaine\n\nPourquoi la cybersécurité et le machine learning sont-ils cruciaux pour les entreprises aujourd’hui ?\n\n\n\nObjectifs du stage\n\nPourquoi avez-vous défini ces objectifs spécifiques ?"
   },
   {
     "objectID": "index.html#découverte-et-contexte",
     "href": "index.html#découverte-et-contexte",
     "title": "Rapport de stage 3A",
     "section": "1. Découverte et Contexte",
-    "text": "1. Découverte et Contexte\n\nPremiers pas dans le stage : Enthousiasme et incertitude\n\n\nIntroduction à la cybersécurité : Définition et importance\n\n\nPrésentation de l’équipe SOC et du système d’information (SI)\n\n\nCompréhension du SIEM et des logs"
+    "text": "1. Découverte et Contexte\n\nPremiers pas dans le stage : Enthousiasme et incertitude\n\nPourquoi avez-vous ressenti ces sentiments au début ?\n\n\n\nIntroduction à la cybersécurité : Définition et importance\n\nPourquoi est-il important de comprendre les bases de la cybersécurité dès le début ?\n\n\n\nPrésentation de l’équipe SOC et du système d’information (SI)\n\nPourquoi la compréhension de l’équipe et du SI est-elle cruciale pour votre stage ?\n\n\n\nCompréhension du SIEM et des logs\n\nPourquoi le SIEM et les logs sont-ils essentiels dans le contexte de la cybersécurité ?"
   },
   {
     "objectID": "index.html#recherche-et-collecte-de-données",
     "href": "index.html#recherche-et-collecte-de-données",
     "title": "Rapport de stage 3A",
     "section": "2. Recherche et Collecte de Données",
-    "text": "2. Recherche et Collecte de Données\n\nAttente de Splunk et recherche de datasets pertinents\n\nTypes de données : Réseau, logs, HTTP\nSélection et préparation des datasets\n\n\n\nPrésentation des premières données obtenues"
+    "text": "2. Recherche et Collecte de Données\n\nAttente de Splunk et recherche de datasets pertinents\n\nPourquoi avez-vous choisi d’utiliser Splunk et quels critères ont guidé la recherche des datasets ?\n\nTypes de données : Réseau, logs, HTTP\n\nPourquoi ces types de données spécifiques sont-ils importants ?\n\nSélection et préparation des datasets\n\nPourquoi cette étape est-elle critique pour la suite du projet ?\n\n\n\n\n\nPrésentation des premières données obtenues\n\nPourquoi ces données sont-elles pertinentes pour votre projet ?"
   },
   {
     "objectID": "index.html#choix-des-problèmes-et-des-outils-de-machine-learning",
     "href": "index.html#choix-des-problèmes-et-des-outils-de-machine-learning",
     "title": "Rapport de stage 3A",
     "section": "3. Choix des Problèmes et des Outils de Machine Learning",
-    "text": "3. Choix des Problèmes et des Outils de Machine Learning\n\nDéfinition des problèmes de machine learning en cybersécurité\n\n\nIntroduction à Scikit-learn et choix des modèles\n\n\nFormation à l’interprétabilité des modèles"
+    "text": "3. Choix des Problèmes et des Outils de Machine Learning\n\nDéfinition des problèmes de machine learning en cybersécurité\n\nPourquoi est-il crucial de bien définir les problèmes avant de choisir les outils ?\n\n\n\nIntroduction à Scikit-learn et choix des modèles\n\nPourquoi avez-vous choisi Scikit-learn et ces modèles spécifiques ?\n\n\n\nFormation à l’interprétabilité des modèles\n\nPourquoi l’interprétabilité est-elle importante dans le contexte de la cybersécurité ?"
   },
   {
     "objectID": "index.html#exploration-de-modèles-et-outils-avancés",
     "href": "index.html#exploration-de-modèles-et-outils-avancés",
     "title": "Rapport de stage 3A",
     "section": "4. Exploration de Modèles et Outils Avancés",
-    "text": "4. Exploration de Modèles et Outils Avancés\n\nEssais avec XGBoost pour la classification des malwares\n\n\nDécouverte de MLflow et utilisation de l’API\n\n\nIntroduction au deep learning avec le livre “Deep Learning from Scratch” (DLFS)\n\n\nExploration des design patterns en deep learning"
+    "text": "4. Exploration de Modèles et Outils Avancés\n\nEssais avec XGBoost pour la classification des malwares\n\nPourquoi avez-vous choisi XGBoost pour ce problème ?\n\n\n\nDécouverte de MLflow et utilisation de l’API\n\nPourquoi MLflow est-il utile pour votre projet ?\n\n\n\nIntroduction au deep learning avec le livre “Deep Learning from Scratch” (DLFS)\n\nPourquoi ce livre et le deep learning sont-ils pertinents pour vos objectifs ?\n\n\n\nExploration des design patterns en deep learning\n\nPourquoi est-il important de comprendre ces design patterns ?"
   },
   {
     "objectID": "index.html#anomaly-detection-et-modèles-de-classification",
     "href": "index.html#anomaly-detection-et-modèles-de-classification",
     "title": "Rapport de stage 3A",
     "section": "5. Anomaly Detection et Modèles de Classification",
-    "text": "5. Anomaly Detection et Modèles de Classification\n\nDétour par la détection d’anomalies : Difficultés et recentrage\n\n\nAnalyses simples avec KNN et clustering\n\n\nAnalyse des données HTTP et détection des attaques (ex. DDOS)\n\n\nFocalisation sur l’analyse des URL et compréhension des attaques"
+    "text": "5. Anomaly Detection et Modèles de Classification\n\nDétour par la détection d’anomalies : Difficultés et recentrage\n\nPourquoi avez-vous rencontré ces difficultés et comment avez-vous réajusté votre approche ?\n\n\n\nAnalyses simples avec KNN et clustering\n\nPourquoi avez-vous choisi ces méthodes pour l’analyse initiale ?\n\n\n\nAnalyse des données HTTP et détection des attaques (ex. DDOS)\n\nPourquoi ces types d’attaques sont-ils une priorité dans votre analyse ?\n\n\n\nFocalisation sur l’analyse des URL et compréhension des attaques\n\nPourquoi l’analyse des URL est-elle cruciale dans la détection des attaques ?"
   },
   {
     "objectID": "index.html#exploration-darticles-scientifiques",
     "href": "index.html#exploration-darticles-scientifiques",
     "title": "Rapport de stage 3A",
     "section": "6. Exploration d’Articles Scientifiques",
-    "text": "6. Exploration d’Articles Scientifiques\n\nLecture et analyse de l’article “Machine Learning for Cybersecurity Applications” de la West Virginia University (WVU)\n\nSynthèse des méthodes et résultats principaux\n\n\n\nÉtude de “A Comprehensive Review of Anomaly Detection in Web Logs” du Hasso Plattner Institute (HPI)\n\nPrincipales techniques d’anomaly detection discutées\n\n\n\nAnalyse de l’article “CRISIS2020_EasyChair_PID_011”\n\nPoints clés et implications pour la cybersécurité\n\n\n\nExploration de “Conf_SIN2022__SWAF” pour le développement d’un pare-feu applicatif basé sur du machine learning\n\nInnovations et applications potentielles"
+    "text": "6. Exploration d’Articles Scientifiques\n\nLecture et analyse de l’article “Machine Learning for Cybersecurity Applications” de la West Virginia University (WVU)\n\nPourquoi cet article est-il pertinent pour votre travail ?\n\n\n\nÉtude de “A Comprehensive Review of Anomaly Detection in Web Logs” du Hasso Plattner Institute (HPI)\n\nPourquoi cet article est-il pertinent pour votre travail ?\n\n\n\nAnalyse de l’article “CRISIS2020_EasyChair_PID_011”\n\nPourquoi cet article est-il pertinent pour votre travail ?\n\n\n\nExploration de “Conf_SIN2022__SWAF” pour le développement d’un pare-feu applicatif basé sur du machine learning\n\nPourquoi cet article est-il pertinent pour votre travail ?"
   },
   {
     "objectID": "index.html#modélisation-et-évaluation-des-modèles",
     "href": "index.html#modélisation-et-évaluation-des-modèles",
     "title": "Rapport de stage 3A",
     "section": "7. Modélisation et Évaluation des Modèles",
-    "text": "7. Modélisation et Évaluation des Modèles\n\nModélisation des URL : KNN, SVM, regression logistique, CNN\n\n\nUtilisation de ChatGPT et des GPU pour accélérer le développement\n\n\nOrganisation des priorités et gestion des expérimentations"
+    "text": "7. Modélisation et Évaluation des Modèles\n\nModélisation des URL : KNN, SVM, regression logistique, CNN\n\nPourquoi avez-vous choisi ces modèles spécifiques pour la modélisation des URL ?\n\n\n\nUtilisation de ChatGPT et des GPU pour accélérer le développement\n\nPourquoi ces outils ont-ils été utilisés pour accélérer le développement ?\n\n\n\nOrganisation des priorités et gestion des expérimentations\n\nPourquoi cette organisation est-elle importante pour la réussite de votre projet ?"
   },
   {
     "objectID": "index.html#travail-avec-splunk-et-pipelines",
     "href": "index.html#travail-avec-splunk-et-pipelines",
     "title": "Rapport de stage 3A",
     "section": "8. Travail avec Splunk et Pipelines",
-    "text": "8. Travail avec Splunk et Pipelines\n\nTraitement des données Splunk en préproduction\n\n\nTokenization des URL et limitations\n\n\nDéveloppement de pipelines et utilisation de GridsearchCV\n\n\nÉvaluation des performances des modèles"
+    "text": "8. Travail avec Splunk et Pipelines\n\nTraitement des données Splunk en préproduction\n\nPourquoi le traitement des données en préproduction est-il nécessaire ?\n\n\n\nTokenization des URL et limitations\n\nPourquoi avez-vous utilisé cette méthode de tokenization et quelles en sont les limites ?\n\n\n\nDéveloppement de pipelines et utilisation de GridsearchCV\n\nPourquoi ces techniques sont-elles cruciales pour optimiser les modèles ?\n\n\n\nÉvaluation des performances des modèles\n\nPourquoi une évaluation rigoureuse des performances est-elle essentielle ?"
   },
   {
     "objectID": "index.html#expérimentations-et-déploiement",
     "href": "index.html#expérimentations-et-déploiement",
     "title": "Rapport de stage 3A",
     "section": "9. Expérimentations et Déploiement",
-    "text": "9. Expérimentations et Déploiement\n\nUtilisation de MLFlow pour la gestion des expérimentations\n\n\nApprentissage à requêter et déployer un modèle via une API\n\n\nDéploiement sur un cluster Kubernetes et gestion du preprocessing\n\n\nIntroduction à Metaflow (Netflix) et tests préliminaires"
+    "text": "9. Expérimentations et Déploiement\n\nUtilisation de MLFlow pour la gestion des expérimentations\n\nPourquoi MLFlow est-il un choix stratégique pour gérer les expérimentations ?\n\n\n\nApprentissage à requêter et déployer un modèle via une API\n\nPourquoi cette compétence est-elle importante dans le cadre de votre stage ?\n\n\n\nDéploiement sur un cluster Kubernetes et gestion du preprocessing\n\nPourquoi Kubernetes et le preprocessing sont-ils importants pour le déploiement ?\n\n\n\nIntroduction à Metaflow (Netflix) et tests préliminaires\n\nPourquoi avez-vous exploré Metaflow et quels avantages cela apporte-t-il ?"
   },
   {
     "objectID": "index.html#reproductibilité-et-mlops",
     "href": "index.html#reproductibilité-et-mlops",
     "title": "Rapport de stage 3A",
     "section": "10. Reproductibilité et MLOps",
-    "text": "10. Reproductibilité et MLOps\n\nImportance de la reproductibilité et utilisation des cours de l’ENSAE\n\n\nRéalisation d’un projet MLOps :\n\nDéploiement d’une API sur Kubernetes\nSystème d’entraînement et stockage des modèles\n\n\n\nExploration de Spark pour le calcul et le streaming"
+    "text": "10. Reproductibilité et MLOps\n\nImportance de la reproductibilité et utilisation des cours de l’ENSAE\n\nPourquoi la reproductibilité est-elle critique dans le domaine du machine learning ?\n\n\n\nRéalisation d’un projet MLOps :\n\nPourquoi ces aspects spécifiques du MLOps sont-ils importants ?\n\n\n\nExploration de Spark pour le calcul et le streaming\n\nPourquoi Spark est-il un outil pertinent pour vos objectifs ?"
   },
   {
     "objectID": "index.html#conclusion",
     "href": "index.html#conclusion",
     "title": "Rapport de stage 3A",
     "section": "Conclusion",
-    "text": "Conclusion\n\nBilan du stage et accomplissements\n\n\nPerspectives futures : Améliorations et extensions possibles\n\n\nRemerciements et réflexions personnelles"
+    "text": "Conclusion\n\nBilan du stage et accomplissements\n\nPourquoi ces réalisations sont-elles significatives ?\n\n\n\nPerspectives futures : Améliorations et extensions possibles\n\nPourquoi ces améliorations sont-elles envisagées ?\n\n\n\nRemerciements et réflexions personnelles\n\nPourquoi ces personnes/expériences sont-elles importantes pour vous ?"
   },
   {
     "objectID": "index.html#annexe",
     "href": "index.html#annexe",
     "title": "Rapport de stage 3A",
     "section": "Annexe",
-    "text": "Annexe\n\nRessources supplémentaires : Notebooks, articles, tutoriels, dépôts Github\n\n\nDétails techniques des implémentations et configurations\n\n\nBibliographie et références"
+    "text": "Annexe\n\nRessources supplémentaires : Notebooks, articles, tutoriels, dépôts Github\n\nPourquoi ces ressources sont-elles utiles ?\n\n\n\nDétails techniques des implémentations et configurations\n\nPourquoi ces détails techniques sont-ils importants pour la compréhension de votre travail ?\n\n\n\nBibliographie et références\n\nPourquoi ces références ont-elles été utilisées ?"
   }
 ]
