@@ -6,7 +6,7 @@ description: "Un rapport détaillé sur mon stage de 3e année au SOC, couvrant 
 keywords: ["cybersécurité", "machine learning", "stage", "rapport"]
 ---
 
-[Download PDF](docs/index.pdf)
+[Download PDF](index.pdf)
 
 ## Table des matières
 
