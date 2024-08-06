@@ -83,7 +83,7 @@ En débutant ce stage, j'avais pour but de pouvoir réaliser des objectifs à la
 
 2. **Développement de compétences spécifiques** : Pour réaliser la tâche principale de ce stage, j'avais besoin de maîtriser des techniques de machine learning et de deep learning appliquées à la cybersécurité, ainsi que de les inscrire dans une approche de type DevOps ou MLOps. Il m'a donc fallu utiliser des outils comme Scikit-learn, MLflow, des techniques de deep learning, et utiliser le cluster Kubernetes pour entraîner et déployer un modèle avec une API.
 
-3. **Application pratique des connaissances théoriques** :
+3. **Application pratique des connaissances théoriques** : Si j'ai appris à faire du machine learning à l'école et y ai découvert des notions de DevOps, ce n'est qu'en arrivant en stage que j'ai pu découvrir l'étendue des problèmes pratiques que cela peut poser. Isolés, dans des environnements de travail bien conçus, voire seulement à travers une présentation théorique, les cours m'ont permis d'acquérir des connaissances. Cependant, c'est seulement en travaillant sur des projets réels que j'ai pu répondre de façon pratique en piochant dans la boîte à outils de mes cours.
 
 4. **Contribution à l'organisation d'accueil** : 
 
