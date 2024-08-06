@@ -69,14 +69,29 @@ D'autre part, le machine learning offre des outils puissants pour détecter et p
 
 [![HarfangLab, déployé sur le poste de travail](figures/HarfangLab.png "HarfangLab"){width=40%}](https://harfanglab.io/)
 
-Le machine learning permet également de réduire le travail des analystes du SOC en classifiant automatiquement les requêtes comme bégnines ou malveillante.
-
-
+Le machine learning permettrait également de réduire le travail des analystes du SOC en classifiant automatiquement les requêtes comme bégnines ou malveillante.
 
 
 ### Objectifs du stage
 
 - Pourquoi avez-vous défini ces objectifs spécifiques ?
+Dans le cadre du stage, il était intéressant de travailler sur les requêtes http. En effet, le SOC cherche à monter un SIEM associé à un puit de logs (à définir). Pour faire cela, il était intéressant d'adopter une démarche globale plutôt qu'une démarche spécialisée dans la cybersécurité.
+
+
+En débutant ce stage, j'avais pour but de pouvoir réaliser des objectifs à la fois académiques, en lien avec mes intérêts développés lors de la scolarité, ainsi que des objectifs professionnels, me permettant de m'insérer au mieux dans la structure de l'Insee pour débuter ma carrière d'attaché.
+
+
+1. **Alignement avec mes objectifs de carrière** : 
+
+2. **Développement de compétences spécifiques** : 
+
+3. **Application pratique des connaissances théoriques** :
+
+4. **Contribution à l'organisation d'accueil** : 
+
+5. **Exploration des défis et opportunités** : 
+
+
 
 ## 1. Découverte et Contexte
 
