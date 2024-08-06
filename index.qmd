@@ -4,6 +4,7 @@ author: "Mathieu Thomassin"
 date: "2024-08-31"
 description: "Un rapport détaillé sur mon stage de 3e année au SOC, couvrant divers aspects de la cybersécurité et du machine learning."
 keywords: ["cybersécurité", "machine learning", "stage", "rapport"]
+bibliography: references.bib
 ---
 
 [Download PDF](index.pdf)
@@ -89,25 +90,38 @@ En débutant ce stage, j'avais pour but de pouvoir réaliser des objectifs à la
 
 5. **Exploration des défis et opportunités** : Face à un nouveau problème pour moi, j'ai voulu prendre le temps d'explorer certaines spécificités liées à la cybersécurité et les pratiques MLOps. J'ai donc recherché, à travers le web, dans des livres et des articles, les méthodes classiques en machine learning pour améliorer la sécurité des systèmes d'information ainsi que les façons possibles de les mettre en œuvre de manière robuste et reproductible.
 
-Ces objectifs m'ont permis de m'assurer que ce stage serait bénéfique pour mon parcours comme pour l'Insee. Cependant, s'ils apparaissent rétrospectivement relativement clairs, ils ont pourtant été construits au fur et à mesure de mon avancée comme nous allons maintenant l'explorer dans la suite.
+Ces objectifs m'ont permis de m'assurer que ce stage serait bénéfique pour mon parcours comme pour l'Insee. Cependant, s'ils apparaissent rétrospectivement relativement clairs, ils ont pourtant été construits au fur et à mesure de mon avancée comme nous allons maintenant l'explorer.
 
 ## 1. Découverte et Contexte
 
 ### Premiers pas dans le stage : Enthousiasme et incertitude
 
 <!-- - Pourquoi avez-vous ressenti ces sentiments au début ? -->
+- **Sentiments initiaux** : Décrivez vos émotions et attentes avant de commencer le stage.
+- **Raisons de ces sentiments** : Expliquez pourquoi vous ressentiez de l'enthousiasme et de l'incertitude (nouveau domaine, nouvelles responsabilités, etc.).
+- **Objectifs personnels initiaux** : Mentionnez vos objectifs personnels en début de stage.
 
 ### Introduction à la cybersécurité : Définition et importance
 
 <!-- - Pourquoi est-il important de comprendre les bases de la cybersécurité dès le début ? -->
+- **Définition de la cybersécurité** : La cybersécurité consiste à protéger les systèmes, les réseaux et les programmes contre les attaques numériques. @noauthor_quest-ce_nodate Assurer la sécurité du système d'information (SSI) consiste à gérer les risques de sécurité selon une démarche en trois étapes: lister, évaluer et traiter les risques. @noauthor_dechiffrer_nodate La notion de SOC, *Security Operation Center*, devient essentiel pour mettre en oeuvre une politique de cybersécurité. UN SOC, doit "monitorer l'ensemble des composants d'un système d'information et être capable de détecter et de sélectionner parmi des milliars d'octets des éléments caractéritiques d'une cyberattaque" @noauthor_cybersecurite_2024.
+- **Importance de la cybersécurité** : Expliquez pourquoi la cybersécurité est cruciale pour les entreprises modernes.
+- **Liens avec le machine learning** : Mentionnez brièvement comment le machine learning peut aider en cybersécurité, sans trop détailler (pour ne pas anticiper les autres sections).
 
 ### Présentation de l'équipe SOC et du système d'information (SI)
 
 <!-- - Pourquoi la compréhension de l'équipe et du SI est-elle cruciale pour votre stage ? -->
+- **Structure de l'équipe SOC** : Décrivez l'équipe SOC, ses membres clés, et leurs rôles.
+- **Fonctionnement du SOC** : Expliquez comment le SOC fonctionne, ses principaux objectifs, et ses défis.
+- **Présentation du SI** : Donnez un aperçu du système d'information de l'Insee, ses composants principaux, et son importance pour l'organisation.
 
 ### Compréhension du SIEM et des logs
 
 <!-- - Pourquoi le SIEM et les logs sont-ils essentiels dans le contexte de la cybersécurité ? -->
+- **Rôle du SIEM** : Expliquez ce qu'est un SIEM (Security Information and Event Management) et son rôle dans la cybersécurité.
+- **Utilisation des logs** : Décrivez l'importance des logs dans la détection des incidents de sécurité.
+- **Intégration des logs dans le SIEM** : Mentionnez comment les logs sont intégrés et utilisés par le SIEM pour la surveillance et la détection des menaces.
+
 
 ## 2. Recherche et Collecte de Données
 
@@ -287,3 +301,4 @@ Ces objectifs m'ont permis de m'assurer que ce stage serait bénéfique pour mon
 ### Bibliographie et références
 
 <!-- - Pourquoi ces références ont-elles été utilisées ? -->
+

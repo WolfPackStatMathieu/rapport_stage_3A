@@ -24,7 +24,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -322,7 +342,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Contribution à l’organisation d’accueil</strong> : Débutant dans le domaine de la cybersécurité, je n’avais pas pour objectif d’apporter une solution exploitable en production. En revanche, il était essentiel pour moi de démontrer ma capacité future à prendre une position d’ingénieur capable d’envisager un problème nouveau et d’y apporter une solution pratique exploitable par une équipe. La création d’un socle d’entraînement pour un modèle de détection de requêtes malveillantes, destiné à être utilisé par des utilisateurs, sert cet objectif.</p></li>
 <li><p><strong>Exploration des défis et opportunités</strong> : Face à un nouveau problème pour moi, j’ai voulu prendre le temps d’explorer certaines spécificités liées à la cybersécurité et les pratiques MLOps. J’ai donc recherché, à travers le web, dans des livres et des articles, les méthodes classiques en machine learning pour améliorer la sécurité des systèmes d’information ainsi que les façons possibles de les mettre en œuvre de manière robuste et reproductible.</p></li>
 </ol>
-<p>Ces objectifs m’ont permis de m’assurer que ce stage serait bénéfique pour mon parcours comme pour l’Insee. Cependant, s’ils apparaissent rétrospectivement relativement clairs, ils ont pourtant été construits au fur et à mesure de mon avancée comme nous allons maintenant l’explorer dans la suite.</p>
+<p>Ces objectifs m’ont permis de m’assurer que ce stage serait bénéfique pour mon parcours comme pour l’Insee. Cependant, s’ils apparaissent rétrospectivement relativement clairs, ils ont pourtant été construits au fur et à mesure de mon avancée comme nous allons maintenant l’explorer.</p>
 </section>
 </section>
 <section id="découverte-et-contexte" class="level2">
@@ -330,18 +350,38 @@ ul.task-list li input[type="checkbox"] {
 <section id="premiers-pas-dans-le-stage-enthousiasme-et-incertitude" class="level3">
 <h3 class="anchored" data-anchor-id="premiers-pas-dans-le-stage-enthousiasme-et-incertitude">Premiers pas dans le stage : Enthousiasme et incertitude</h3>
 <!-- - Pourquoi avez-vous ressenti ces sentiments au début ? -->
+<ul>
+<li><strong>Sentiments initiaux</strong> : Décrivez vos émotions et attentes avant de commencer le stage.</li>
+<li><strong>Raisons de ces sentiments</strong> : Expliquez pourquoi vous ressentiez de l’enthousiasme et de l’incertitude (nouveau domaine, nouvelles responsabilités, etc.).</li>
+<li><strong>Objectifs personnels initiaux</strong> : Mentionnez vos objectifs personnels en début de stage.</li>
+</ul>
 </section>
 <section id="introduction-à-la-cybersécurité-définition-et-importance" class="level3">
 <h3 class="anchored" data-anchor-id="introduction-à-la-cybersécurité-définition-et-importance">Introduction à la cybersécurité : Définition et importance</h3>
 <!-- - Pourquoi est-il important de comprendre les bases de la cybersécurité dès le début ? -->
+<ul>
+<li><strong>Définition de la cybersécurité</strong> : La cybersécurité consiste à protéger les systèmes, les réseaux et les programmes contre les attaques numériques. <span class="citation" data-cites="noauthor_quest-ce_nodate"><span>“Qu’est-Ce Que La Cybersécurité ?”</span> (<a href="#ref-noauthor_quest-ce_nodate" role="doc-biblioref">n.d.</a>)</span> Assurer la sécurité du système d’information (SSI) consiste à gérer les risques de sécurité selon une démarche en trois étapes: lister, évaluer et traiter les risques. <span class="citation" data-cites="noauthor_dechiffrer_nodate"><span>“Déchiffrer Le <span>Mag</span> 12 (Décembre 2023) - Version Pdf Accessible”</span> (<a href="#ref-noauthor_dechiffrer_nodate" role="doc-biblioref">n.d.</a>)</span> La notion de SOC, <em>Security Operation Center</em>, devient essentiel pour mettre en oeuvre une politique de cybersécurité. UN SOC, doit “monitorer l’ensemble des composants d’un système d’information et être capable de détecter et de sélectionner parmi des milliars d’octets des éléments caractéritiques d’une cyberattaque” <span class="citation" data-cites="noauthor_cybersecurite_2024"><span>“Cybersécurité”</span> (<a href="#ref-noauthor_cybersecurite_2024" role="doc-biblioref">2024</a>)</span>.</li>
+<li><strong>Importance de la cybersécurité</strong> : Expliquez pourquoi la cybersécurité est cruciale pour les entreprises modernes.</li>
+<li><strong>Liens avec le machine learning</strong> : Mentionnez brièvement comment le machine learning peut aider en cybersécurité, sans trop détailler (pour ne pas anticiper les autres sections).</li>
+</ul>
 </section>
 <section id="présentation-de-léquipe-soc-et-du-système-dinformation-si" class="level3">
 <h3 class="anchored" data-anchor-id="présentation-de-léquipe-soc-et-du-système-dinformation-si">Présentation de l’équipe SOC et du système d’information (SI)</h3>
 <!-- - Pourquoi la compréhension de l'équipe et du SI est-elle cruciale pour votre stage ? -->
+<ul>
+<li><strong>Structure de l’équipe SOC</strong> : Décrivez l’équipe SOC, ses membres clés, et leurs rôles.</li>
+<li><strong>Fonctionnement du SOC</strong> : Expliquez comment le SOC fonctionne, ses principaux objectifs, et ses défis.</li>
+<li><strong>Présentation du SI</strong> : Donnez un aperçu du système d’information de l’Insee, ses composants principaux, et son importance pour l’organisation.</li>
+</ul>
 </section>
 <section id="compréhension-du-siem-et-des-logs" class="level3">
 <h3 class="anchored" data-anchor-id="compréhension-du-siem-et-des-logs">Compréhension du SIEM et des logs</h3>
 <!-- - Pourquoi le SIEM et les logs sont-ils essentiels dans le contexte de la cybersécurité ? -->
+<ul>
+<li><strong>Rôle du SIEM</strong> : Expliquez ce qu’est un SIEM (Security Information and Event Management) et son rôle dans la cybersécurité.</li>
+<li><strong>Utilisation des logs</strong> : Décrivez l’importance des logs dans la détection des incidents de sécurité.</li>
+<li><strong>Intégration des logs dans le SIEM</strong> : Mentionnez comment les logs sont intégrés et utilisés par le SIEM pour la surveillance et la détection des menaces.</li>
+</ul>
 </section>
 </section>
 <section id="recherche-et-collecte-de-données" class="level2">
@@ -534,14 +574,25 @@ ul.task-list li input[type="checkbox"] {
 <!-- - Pourquoi ces détails techniques sont-ils importants pour la compréhension de votre travail ? -->
 </section>
 <section id="bibliographie-et-références" class="level3">
-<h3 class="anchored" data-anchor-id="bibliographie-et-références">Bibliographie et références</h3>
+
 <!-- - Pourquoi ces références ont-elles été utilisées ? -->
 
 
+
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Bibliographie et références</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-noauthor_cybersecurite_2024" class="csl-entry" role="listitem">
+<span>“Cybersécurité.”</span> 2024. <em>Wikipédia</em>. <a href="https://fr.wikipedia.org/w/index.php?title=Cybers%C3%A9curit%C3%A9&amp;oldid=215272230">https://fr.wikipedia.org/w/index.php?title=Cybers%C3%A9curit%C3%A9&amp;oldid=215272230</a>.
+</div>
+<div id="ref-noauthor_dechiffrer_nodate" class="csl-entry" role="listitem">
+<span>“Déchiffrer Le <span>Mag</span> 12 (Décembre 2023) - Version Pdf Accessible.”</span> n.d. <em>Intranet INSEE</em>. Accessed August 6, 2024. <a href="https://intranet.insee.fr/jcms/29406323_DBFileDocument/fr/dechiffrer-le-mag-12-decembre-2023-version-pdf-accessible?details=true">https://intranet.insee.fr/jcms/29406323_DBFileDocument/fr/dechiffrer-le-mag-12-decembre-2023-version-pdf-accessible?details=true</a>.
+</div>
+<div id="ref-noauthor_quest-ce_nodate" class="csl-entry" role="listitem">
+<span>“Qu’est-Ce Que La Cybersécurité ?”</span> n.d. <em>Cisco</em>. Accessed August 6, 2024. <a href="https://www.cisco.com/c/fr_fr/products/security/what-is-cybersecurity.html">https://www.cisco.com/c/fr_fr/products/security/what-is-cybersecurity.html</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
