@@ -85,7 +85,7 @@ En débutant ce stage, j'avais pour but de pouvoir réaliser des objectifs à la
 
 3. **Application pratique des connaissances théoriques** : Si j'ai appris à faire du machine learning à l'école et y ai découvert des notions de DevOps, ce n'est qu'en arrivant en stage que j'ai pu découvrir l'étendue des problèmes pratiques que cela peut poser. Isolés, dans des environnements de travail bien conçus, voire seulement à travers une présentation théorique, les cours m'ont permis d'acquérir des connaissances. Cependant, c'est seulement en travaillant sur des projets réels que j'ai pu répondre de façon pratique en piochant dans la boîte à outils de mes cours.
 
-4. **Contribution à l'organisation d'accueil** : 
+4. **Contribution à l'organisation d'accueil** : Débutant dans le domaine de la cybersécurité, je n'avais pas pour objectif d'apporter une solution exploitable en production. En revanche, il était essentiel pour moi de démontrer ma capacité future à prendre une position d'ingénieur capable d'envisager un problème nouveau et d'y apporter une solution pratique exploitable par une équipe. La création d'un socle d'entraînement pour un modèle de détection de requêtes malveillantes, destiné à être utilisé par des utilisateurs, sert cet objectif.
 
 5. **Exploration des défis et opportunités** : 
 
