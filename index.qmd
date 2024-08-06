@@ -97,14 +97,17 @@ Ces objectifs m'ont permis de m'assurer que ce stage serait bénéfique pour mon
 ### Premiers pas dans le stage : Enthousiasme et incertitude
 
 <!-- - Pourquoi avez-vous ressenti ces sentiments au début ? -->
-- **Sentiments initiaux** : Décrivez vos émotions et attentes avant de commencer le stage.
-- **Raisons de ces sentiments** : Expliquez pourquoi vous ressentiez de l'enthousiasme et de l'incertitude (nouveau domaine, nouvelles responsabilités, etc.).
-- **Objectifs personnels initiaux** : Mentionnez vos objectifs personnels en début de stage.
+- **Sentiments initiaux** : 
+Avant de commencer le stage, j'avais pu discuter avec le RSSI (Responsable Sécurité du Système d'Information) et le DSI (Directeur du Système d'Information) de l'Insee au cours d'une formation interne avant l'oral de la qualification d'analyste. J'étais plutôt impressionné par les enjeux, le SI de l'Insee étant régulièrement la cible d'attaques dont j'entendais parler. Cependant, si je savais que je n'étais pas formé comme un "véritable" informaticien [-@noauthor_mi-2020-2_nodate], n'ayant reçu qu'une "sensibilisation à l'informatique de production ou à la sécurité" [-@noauthor_mi-2020-2_nodate-1] p55, j'avais plutôt confiance dans mes récentes capacités à traiter des données et dans mon envie de découvrir le domaine.
+
+- **Raisons de ces sentiments** : Lors de la scolarité, j'avais pris l'habitude d'explorer les rayonnages de la bibliothèque de l'Ensai, et j'y avais repéré un livre [-@chio_machine_nodate] sur le machine learning et la sécurité. Me remémorant ce dont m'avait parlé mon ancien maître de stage sur le plan de reprise d'activité de l'application critique Elire, et en sachant qu'un système informatique génère une quantité de données sur lesquelles il est possible de travailler pour mieux en comprendre les rouages, la perspective de travailler sur la sécurité du SI de l'Insee m'intéressait beaucoup. Cependant, je n'avais pas encore d'idée sur l'application concrète d'un tel projet, ce qui me plongeait dans une certaine incertitude.
+
+- **Objectifs personnels initiaux** : C'est pourquoi, j'avais tout d'abord comme objectif de mieux comprendre ce qu'il était possible de faire en sécurité informatique au sein de l'Insee. N'y avait-il pas déjà des outils externes très performants ? Qu'était-il possible d'apporter en tant qu'attaché statisticien débutant ?
 
 ### Introduction à la cybersécurité : Définition et importance
 
 <!-- - Pourquoi est-il important de comprendre les bases de la cybersécurité dès le début ? -->
-- **Définition de la cybersécurité** : La cybersécurité consiste à protéger les systèmes, les réseaux et les programmes contre les attaques numériques. @noauthor_quest-ce_nodate Assurer la sécurité du système d'information (SSI) consiste à gérer les risques de sécurité selon une démarche en trois étapes: lister, évaluer et traiter les risques. @noauthor_dechiffrer_nodate La notion de SOC, *Security Operation Center*, devient essentiel pour mettre en oeuvre une politique de cybersécurité. UN SOC, doit "monitorer l'ensemble des composants d'un système d'information et être capable de détecter et de sélectionner parmi des milliars d'octets des éléments caractéritiques d'une cyberattaque" @noauthor_cybersecurite_2024.
+- **Définition de la cybersécurité** : La cybersécurité consiste à protéger les systèmes, les réseaux et les programmes contre les attaques numériques. [-@noauthor_quest-ce_nodate] Assurer la sécurité du système d'information (SSI) consiste à gérer les risques de sécurité selon une démarche en trois étapes: lister, évaluer et traiter les risques. [-@noauthor_dechiffrer_nodate] La notion de SOC, *Security Operation Center*, devient alors essentiel pour mettre en oeuvre une politique de cybersécurité. UN SOC, doit "monitorer l'ensemble des composants d'un système d'information et être capable de détecter et de sélectionner parmi des milliars d'octets des éléments caractéritiques d'une cyberattaque" [-@noauthor_cybersecurite_2024].
 - **Importance de la cybersécurité** : Expliquez pourquoi la cybersécurité est cruciale pour les entreprises modernes.
 - **Liens avec le machine learning** : Mentionnez brièvement comment le machine learning peut aider en cybersécurité, sans trop détailler (pour ne pas anticiper les autres sections).
 
