@@ -87,9 +87,9 @@ En débutant ce stage, j'avais pour but de pouvoir réaliser des objectifs à la
 
 4. **Contribution à l'organisation d'accueil** : Débutant dans le domaine de la cybersécurité, je n'avais pas pour objectif d'apporter une solution exploitable en production. En revanche, il était essentiel pour moi de démontrer ma capacité future à prendre une position d'ingénieur capable d'envisager un problème nouveau et d'y apporter une solution pratique exploitable par une équipe. La création d'un socle d'entraînement pour un modèle de détection de requêtes malveillantes, destiné à être utilisé par des utilisateurs, sert cet objectif.
 
-5. **Exploration des défis et opportunités** : 
+5. **Exploration des défis et opportunités** : Face à un nouveau problème pour moi, j'ai voulu prendre le temps d'explorer certaines spécificités liées à la cybersécurité et les pratiques MLOps. J'ai donc recherché, à travers le web, dans des livres et des articles, les méthodes classiques en machine learning pour améliorer la sécurité des systèmes d'information ainsi que les façons possibles de les mettre en œuvre de manière robuste et reproductible.
 
-
+Ces objectifs m'ont permis de m'assurer que ce stage serait bénéfique pour mon parcours comme pour l'Insee. Cependant, s'ils apparaissent rétrospectivement relativement clairs, ils ont pourtant été construits au fur et à mesure de mon avancée comme nous allons maintenant l'explorer dans la suite.
 
 ## 1. Découverte et Contexte
 
