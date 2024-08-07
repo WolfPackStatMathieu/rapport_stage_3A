@@ -399,7 +399,7 @@ div.csl-indent {
 </section>
 <section id="fonctionnement-du-soc" class="level4">
 <h4 class="anchored" data-anchor-id="fonctionnement-du-soc">Fonctionnement du SOC</h4>
-<p>L’équipe SOC a pour mission de surveiller en permanence le SI de l’Insee afin de détecter, qualifier et remédier aux incidents de sécurité. Les principales activités du SOC incluent <span class="citation" data-cites="noauthor_57snssi03020ac_nodate0">(<a href="#ref-noauthor_57snssi03020ac_nodate0" role="doc-biblioref"><strong>noauthor_57snssi03020ac_nodate0?</strong></a>)</span>:</p>
+<p>L’équipe SOC a pour mission de surveiller en permanence le SI de l’Insee afin de détecter, qualifier et remédier aux incidents de sécurité. Les principales activités du SOC incluent <span class="citation" data-cites="noauthor_57snssi03020ac_nodate">(<a href="#ref-noauthor_57snssi03020ac_nodate" role="doc-biblioref">n.d.</a>)</span>:</p>
 <ul>
 <li><p><strong>Veille et qualification des vulnérabilités</strong> : Identifier quotidiennement les vulnérabilités affectant le SI de l’Insee et évaluer leur impact potentiel.</p></li>
 <li><p><strong>Conception de solutions de sécurité</strong> : Développer et mettre en place des solutions technologiques pour renforcer la sécurité du SI, notamment par la mise en place de solutions techniques innovantes pour garantir la sécurité du SI.</p></li>
@@ -409,8 +409,14 @@ div.csl-indent {
 </ul>
 <p>L’équipe SOC joue un rôle crucial dans la préservation de l’intégrité, de la confidentialité et de la disponibilité des données et des systèmes de l’Insee. Leur travail permet de protéger les actifs numériques de l’organisation contre une variété de menaces cybernétiques.</p>
 <ul>
-<li><strong>Présentation du SI</strong> : Donnez un aperçu du système d’information de l’Insee, ses composants principaux, et son importance pour l’organisation.</li>
+<li><strong>Présentation du SI</strong> : Le système d’information de l’Insee est documenté sur un wiki interne <span class="citation" data-cites="noauthor_reseau_2024">(<a href="#ref-noauthor_reseau_2024" role="doc-biblioref">2024</a>)</span>. On peut notamment y trouver des schémas sur l’architecture du SI de production, mais pas sur celle du SI d’administration. L’architecture du SIA est très fortement guidée par les recommandations de l’anssi. <span class="citation" data-cites="noauthor_recommandations_nodate">(<a href="#ref-noauthor_recommandations_nodate" role="doc-biblioref">n.d.</a>)</span> Pour l’essentiel, on peut retenir une organisation en 3 couches.</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/schema_SI_simplifie.png" title="SI de l'Insee" class="img-fluid figure-img"></p>
+<figcaption>Schéma simplifié du Système d’Information de l’Insee</figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="compréhension-du-siem-et-des-logs" class="level3">
@@ -622,6 +628,9 @@ div.csl-indent {
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Bibliographie et références</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-noauthor_57snssi03020ac_nodate" class="csl-entry" role="listitem">
+<span>“<span>57SNSSI03020Ac</span> - <span>Analyste</span> Du <span>Security</span> <span>Operations</span> <span>Center</span> (<span>SOC</span>).”</span> n.d. <em>Intranet INSEE</em>. Accessed August 7, 2024. <a href="https://intranet.insee.fr/jcms/32252877_DBFileDocument/fr/57snssi03020ac-analyste-du-security-operations-center-soc?details=true">https://intranet.insee.fr/jcms/32252877_DBFileDocument/fr/57snssi03020ac-analyste-du-security-operations-center-soc?details=true</a>.
+</div>
 <div id="ref-chio_machine_nodate" class="csl-entry" role="listitem">
 Chio, Clarence, and David Freeman. n.d. <span>“Machine <span>Learning</span> Et Sécurité [<span>Book</span>].”</span> Accessed August 6, 2024. <a href="https://www.oreilly.com/library/view/machine-learning-et/9782412043561/">https://www.oreilly.com/library/view/machine-learning-et/9782412043561/</a>.
 </div>
@@ -639,6 +648,12 @@ Chio, Clarence, and David Freeman. n.d. <span>“Machine <span>Learning</span> E
 </div>
 <div id="ref-noauthor_quest-ce_nodate" class="csl-entry" role="listitem">
 <span>“Qu’est-Ce Que La Cybersécurité ?”</span> n.d. <em>Cisco</em>. Accessed August 6, 2024. <a href="https://www.cisco.com/c/fr_fr/products/security/what-is-cybersecurity.html">https://www.cisco.com/c/fr_fr/products/security/what-is-cybersecurity.html</a>.
+</div>
+<div id="ref-noauthor_recommandations_nodate" class="csl-entry" role="listitem">
+<span>“Recommandations Relatives à l’administration Sécurisée Des <span>SI</span> <span></span> <span>ANSSI</span>.”</span> n.d. Accessed August 7, 2024. <a href="https://cyber.gouv.fr/publications/recommandations-relatives-ladministration-securisee-des-si">https://cyber.gouv.fr/publications/recommandations-relatives-ladministration-securisee-des-si</a>.
+</div>
+<div id="ref-noauthor_reseau_2024" class="csl-entry" role="listitem">
+<span>“Reseau · <span>Wiki</span> · <span>Domaine</span> Production Informatique / <span>DPII</span> Pour <span>DSI</span> / <span>Documentation</span> Du <span>SI</span> · <span>GitLab</span>.”</span> 2024. <em>GitLab</em>. <a href="https://gitlab.insee.fr/domaine-production-informatique/dpii-pour-dsi/documentation-du-si/-/wikis/Reseau">https://gitlab.insee.fr/domaine-production-informatique/dpii-pour-dsi/documentation-du-si/-/wikis/Reseau</a>.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

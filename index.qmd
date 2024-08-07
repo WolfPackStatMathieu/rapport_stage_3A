@@ -129,7 +129,7 @@ L'équipe SOC de l'Insee a été créée en 2023 et est constituée de 6 membres
 
 #### Fonctionnement du SOC
 
-L'équipe SOC a pour mission de surveiller en permanence le SI de l'Insee afin de détecter, qualifier et remédier aux incidents de sécurité. Les principales activités du SOC incluent [-@noauthor_57snssi03020ac_nodate0]:
+L'équipe SOC a pour mission de surveiller en permanence le SI de l'Insee afin de détecter, qualifier et remédier aux incidents de sécurité. Les principales activités du SOC incluent [-@noauthor_57snssi03020ac_nodate]:
 
 - **Veille et qualification des vulnérabilités** : Identifier quotidiennement les vulnérabilités affectant le SI de l'Insee et évaluer leur impact potentiel.
 
@@ -141,9 +141,13 @@ L'équipe SOC a pour mission de surveiller en permanence le SI de l'Insee afin d
 
 - **Support et expertise** : Apporter une expertise en sécurité aux différentes unités de l'Insee, conseiller sur les meilleures pratiques et aider à la décision en matière de sécurité informatique.
 
+
 L'équipe SOC joue un rôle crucial dans la préservation de l'intégrité, de la confidentialité et de la disponibilité des données et des systèmes de l'Insee. Leur travail permet de protéger les actifs numériques de l'organisation contre une variété de menaces cybernétiques.
 
-- **Présentation du SI** : Donnez un aperçu du système d'information de l'Insee, ses composants principaux, et son importance pour l'organisation.
+- **Présentation du SI** : Le système d'information de l'Insee est documenté sur un wiki interne [-@noauthor_reseau_2024]. On peut notamment y trouver des schémas sur l'architecture du SI de production, mais pas sur celle du SI d'administration. L'architecture du SIA est très fortement guidée par les recommandations de l'anssi. [-@noauthor_recommandations_nodate] Pour l'essentiel, on peut retenir une organisation en 3 couches.
+
+![Schéma simplifié du Système d'Information de l'Insee](figures/schema_SI_simplifie.png "SI de l'Insee")
+
 
 ### Compréhension du SIEM et des logs
 
