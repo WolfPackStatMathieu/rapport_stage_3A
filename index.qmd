@@ -7,6 +7,15 @@ keywords: ["cybersécurité", "machine learning", "stage", "rapport"]
 bibliography: references.bib
 ---
 
+
+```{css, echo = FALSE}
+.justify {
+  text-align: justify !important
+}
+```
+
+
+
 [Download PDF](index.pdf)
 
 ## Table des matières
@@ -31,7 +40,7 @@ bibliography: references.bib
 - Titre du stage: Machine Learning appliqué à la cybersécurité
 
 ## Introduction
-
+::: {.justify}
 L’Insee a renforcé récemment ses capacités opérationnelles en terme de cybersécurité via notamment la création de son SOC (Security Operation Center) en septembre 2023. Devant la quantité de données et leur diversité et face aux évolutions des techniques et tactiques des attaquants, les méthodes de détection de cyberattaques peuvent avoir des limites. L’application d’algorithmes de Machine Learning peut aider les analystes SOC à repérer des attaques. Se déroulant au sein de l’équipe SOC construite depuis peu, le stage va permettre d’appliquer des techniques de Machine Learning et de deep learning sur des jeux de données réelles, afin de participer à la détection d’incidents de sécurité.
 
 - Présentation de l'organisation : L'Insee a renforcé récemment ses capacités opérationnelles en terme de cybersécurité via notamment la création de son SOC (Security Operation Center) en septembre 2023. Cette équipe est répartie entre les sites de la DR de Nantes et la DR de Metz et a pour objectif de renforcer la sécurité du système d'information (SI).
@@ -47,7 +56,7 @@ L’Insee a renforcé récemment ses capacités opérationnelles en terme de cyb
 
 - Importance de la mission pour l'Insee: à titre d'exemple, l'Insee détient l'application Elire. Une attaque réussie sur cette application perturberait le bon déroulement de la vie démocratique. 
 
-
+:::
 ### Contexte général du stage
 
 <!-- - Pourquoi ce stage est-il pertinent dans votre parcours académique et professionnel ? -->
