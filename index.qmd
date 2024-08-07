@@ -28,7 +28,7 @@ bibliography: references.bib
 
 ## Présentation du stagiaire et du maître de stage
 - **Stagiaire** : Mathieu THOMASSIN
-- **Maître de stage** : Michael ORSUCCI
+- **Maître de stage** : Michael ORSUCCI, responsable du *Security Operation Center* de l'Insee
 - **Titre du stage** : Machine Learning appliqué à la cybersécurité
 
 ## Introduction
