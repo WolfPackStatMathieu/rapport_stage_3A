@@ -54,6 +54,7 @@ Il s'agissait d'appliquer des techniques de détection de requêtes malveillante
 
 ### Importance de la mission pour l'Insee
 À titre d'exemple, l'Insee détient l'application Elire. Une attaque réussie sur cette application perturberait le bon déroulement de la vie démocratique.
+Finaliser la formation d'attaché statisticien en s'appliquant à résoudre un problème concret avant une prise de poste dans un domaine proche.
 
 ### Contexte général du stage
 
