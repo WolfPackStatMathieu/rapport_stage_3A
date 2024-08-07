@@ -30,6 +30,30 @@ bibliography: references.bib
 - stagiaire: Mathieu THOMASSIN
 - maître de stage: Michael ORSUCCI
 - Titre du stage: Machine Learning appliqué à la cybersécurité
+## Introduction
+::: {.justify}
+L’Insee a renforcé récemment ses capacités opérationnelles en termes de cybersécurité via notamment la création de son SOC (Security Operation Center) en septembre 2023. Devant la quantité de données et leur diversité et face aux évolutions des techniques et tactiques des attaquants, les méthodes de détection de cyberattaques peuvent avoir des limites. L’application d’algorithmes de Machine Learning peut aider les analystes SOC à repérer des attaques. Se déroulant au sein de l’équipe SOC construite depuis peu, le stage va permettre d’appliquer des techniques de Machine Learning et de deep learning sur des jeux de données réelles, afin de participer à la détection d’incidents de sécurité.
+:::
+
+### Présentation de l'organisation
+L'Insee a renforcé récemment ses capacités opérationnelles en termes de cybersécurité via notamment la création de son SOC (Security Operation Center) en septembre 2023. Cette équipe est répartie entre les sites de la DR de Nantes et la DR de Metz et a pour objectif de renforcer la sécurité du système d'information (SI).
+
+### Contexte général du stage
+Devant la quantité de données et leur diversité et face aux évolutions des techniques et tactiques des attaquants, les méthodes de détection de cyberattaques peuvent avoir des limites. L'application d'algorithmes de Machine Learning peut aider les analystes SOC à repérer des attaques. Le stage avait donc pour but de permettre d'appliquer des techniques de Machine Learning et de deep learning sur des jeux de données réelles, afin de participer à la détection d'incidents de sécurité.
+
+### Objectifs du stage
+#### Objectifs principaux
+Il s'agissait d'appliquer des techniques de détection de requêtes malveillantes arrivant dans le SI de l'Insee. Les requêtes arrivant au sein du SI peuvent être centralisées par un SIEM (Security Information and Event Management).
+
+#### Résultats attendus
+- Offrir un service s'ajoutant au SIEM permettant d'identifier des requêtes malveillantes.
+- Pouvoir comparer différents meilleurs modèles (au sens d'une recherche dans les hyperparamètres) entre eux.
+- Favoriser les bonnes pratiques du MLOps : reproductibilité, contrôle de version, automatisation, surveillance, collaboration.
+- Étendre la méthodologie à des jeux de données publics différents.
+- Explorer les algorithmes de détection d'anomalie.
+
+### Importance de la mission pour l'Insee
+À titre d'exemple, l'Insee détient l'application Elire. Une attaque réussie sur cette application perturberait le bon déroulement de la vie démocratique.
 
 ## Introduction
 ::: {.justify}
