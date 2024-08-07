@@ -13,16 +13,16 @@ bibliography: references.bib
 ## Table des matières
 
 - [Introduction](#introduction)
-- [Découverte et Contexte](#découverte-et-contexte)
-- [Recherche et Collecte de Données](#recherche-et-collecte-de-données)
-- [Choix des Problèmes et des Outils de Machine Learning](#choix-des-problèmes-et-des-outils-de-machine-learning)
-- [Exploration de Modèles et Outils Avancés](#exploration-de-modèles-et-outils-avancés)
-- [Anomaly Detection et Modèles de Classification](#anomaly-detection-et-modèles-de-classification)
-- [Exploration d'Articles Scientifiques](#exploration-darticles-scientifiques)
-- [Modélisation et Évaluation des Modèles](#modélisation-et-évaluation-des-modèles)
-- [Travail avec Splunk et Pipelines](#travail-avec-splunk-et-pipelines)
-- [Expérimentations et Déploiement](#expérimentations-et-déploiement)
-- [Reproductibilité et MLOps](#reproductibilité-et-mlops)
+- [01 - Découverte et Contexte](#découverte-et-contexte)
+- [02 - Recherche et Collecte de Données](#recherche-et-collecte-de-données)
+- [03 - Choix des Problèmes et des Outils de Machine Learning](#choix-des-problèmes-et-des-outils-de-machine-learning)
+- [04 - Exploration de Modèles et Outils Avancés](#exploration-de-modèles-et-outils-avancés)
+- [05 - Anomaly Detection et Modèles de Classification](#anomaly-detection-et-modèles-de-classification)
+- [06 - Exploration d'Articles Scientifiques](#exploration-darticles-scientifiques)
+- [07 - Modélisation et Évaluation des Modèles](#modélisation-et-évaluation-des-modèles)
+- [08 - Travail avec Splunk et Pipelines](#travail-avec-splunk-et-pipelines)
+- [09 - Expérimentations et Déploiement](#expérimentations-et-déploiement)
+- [10 - Reproductibilité et MLOps](#reproductibilité-et-mlops)
 - [Conclusion](#conclusion)
 - [Annexe](#annexe)
 
@@ -124,6 +124,8 @@ Avant de commencer le stage, j'avais pu discuter avec le RSSI (Responsable Sécu
 
 <!-- - Pourquoi la compréhension de l'équipe et du SI est-elle cruciale pour votre stage ? -->
 - **Structure de l'équipe SOC** : Décrivez l'équipe SOC, ses membres clés, et leurs rôles.
+L'équipe SOC est une équipe créée en 2023 à l'Insee. Elle est constituée de 6 membres répartis sur deux sites: Nantes et Metz. Son but est d'établir les moyens et de mettre en oeuvre la politique de sécurité du système d'information de l'Insee.
+
 - **Fonctionnement du SOC** : Expliquez comment le SOC fonctionne, ses principaux objectifs, et ses défis.
 - **Présentation du SI** : Donnez un aperçu du système d'information de l'Insee, ses composants principaux, et son importance pour l'organisation.
 
