@@ -162,9 +162,7 @@ Le plus important pour le stage étant que le SI a un unique point d'entrée/sor
 L'importance du SIEM provient du fait que le flux des logs est très important, de l'ordre de plusieurs dizaines de Go par jour pour le SI de l'Insee. En cas d'incident, examiner les logs machine par machine est une tâche pratiquement impossible sans SIEM. Ce dernier permet de faire des recherches dans les logs, de corréler les événements et de répondre rapidement aux incidents grâce à un système de détection et d'alerte en temps réel.
 
 
-- **Utilisation des logs** : Décrivez l'importance des logs dans la détection des incidents de sécurité.
-
-Tous les appareils du SI génèrent des logs comme on l'a vu. Par exemple Windows enregistre tous les événements, visibles sur l'Event Viewer. Chaque type de log reçoit un ID ce qui permet une analyse plus facile. Ces logs peuvent être envoyées ("forwardées") au SIEM. On peut aussi récupérer des logs sur une machine Linux (ce qui concerne notamment les serveurs dans le SI de l'Insee). De même, il est très important de surveiller les requêtes et les réponses sur les serveurs webs afin de détecter des attaques webs. C'est un point central dans ce stage. Voici un exemple de ce dernier type de log
+- **Utilisation des logs** : Tous les appareils du SI génèrent des logs comme on l'a vu. Par exemple Windows enregistre tous les événements, visibles sur l'Event Viewer. Chaque type de log reçoit un ID ce qui permet une analyse plus facile. Ces logs peuvent être envoyées ("forwardées") au SIEM. On peut aussi récupérer des logs sur une machine Linux (ce qui concerne notamment les serveurs dans le SI de l'Insee). De même, il est très important de surveiller les requêtes et les réponses sur les serveurs webs afin de détecter des attaques webs. C'est un point central dans ce stage. Voici un exemple de ce dernier type de log
 
  **Exemple de log issue d'une requête web :**
 ```default
