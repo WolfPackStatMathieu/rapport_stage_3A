@@ -233,34 +233,39 @@ shap: https://train.learn.datascientest.com/notebooks/137/447
 essai simple et rapide, mais hors sujet. Retour sur good bad queries
 
 ### Découverte de MLflow et utilisation de l'API
-Co
+Comment gérer tous ces notebook ? cf. cours de Lino
 <!-- - Pourquoi MLflow est-il utile pour votre projet ? -->
 
 ### Introduction au deep learning avec le livre "Deep Learning from Scratch" (DLFS)
-
+Bon, il va falloir faire du deep learning, mais comment s'y prendre vraiment ? Est-ce uqe j'ai bien compris en cours ? Voyons voir. Ah oui, on peut battre une régression linéaire avec du deep learning fait soi même. Voir le livre.
 <!-- - Pourquoi ce livre et le deep learning sont-ils pertinents pour vos objectifs ? -->
 
 ### Exploration des design patterns en deep learning
-
 <!-- - Pourquoi est-il important de comprendre ces design patterns ? -->
+Aller voir les différences possibles dans les modèles pour implémenter ensuite.
+
 
 ## 5. Anomaly Detection et Modèles de Classification
 
 ### Détour par la détection d'anomalies : Difficultés et recentrage
-
 <!-- - Pourquoi avez-vous rencontré ces difficultés et comment avez-vous réajusté votre approche ? -->
+on peut facilement faire de la détection d'anomalie avec des algo, l'article fondateur est disponible. Mais le sujet apparaît encore trop difficile. Je n'ai pas encore les données, mais je peux accéder à des dataset de requête http labellisé. Donc on va se recentrer dessus.
+
 
 ### Analyses simples avec KNN et clustering
-
 <!-- - Pourquoi avez-vous choisi ces méthodes pour l'analyse initiale ? -->
+très difficile de faire ce genre de chose, car la tokenization implique de passer en grande (grande...) dimension. Curse of dimensionality.
+Le clustering ne nous intéresse pas pour répondre à un problème d'analyste SOC. Je veux pouvoir analyser une requête, pas connaître des clusters.
 
 ### Analyse des données HTTP et détection des attaques (ex. DDOS)
-
 <!-- - Pourquoi ces types d'attaques sont-ils une priorité dans votre analyse ? -->
+On ne peut pas détecter du DDOS, et ce n'est pas l'objet. Il sera trop tard. Donc on va encore limiter à des requêtes pour d'autres attaques. 
 
 ### Focalisation sur l'analyse des URL et compréhension des attaques
-
 <!-- - Pourquoi l'analyse des URL est-elle cruciale dans la détection des attaques ? -->
+quelques documents disponibles, les champs (description dans un des articles)
+COmment tokenizer la données ?
+
 
 ## 6. Exploration d'Articles Scientifiques
 
@@ -269,66 +274,85 @@ Co
 <!-- - Pourquoi cet article est-il pertinent pour votre travail ? -->
 
 ### Étude de "A Comprehensive Review of Anomaly Detection in Web Logs" du Hasso Plattner Institute (HPI)
-
 <!-- - Pourquoi cet article est-il pertinent pour votre travail ? -->
+Beaucoup de choses peuvent être faite dans la détection, mais finalement pas tant de problèmes similaires au mien. 
 
-### Analyse de l'article "CRISIS2020_EasyChair_PID_011"
-
-<!-- - Pourquoi cet article est-il pertinent pour votre travail ? -->
 
 ### Exploration de "Conf_SIN2022__SWAF" pour le développement d'un pare-feu applicatif basé sur du machine learning
-
 <!-- - Pourquoi cet article est-il pertinent pour votre travail ? -->
+VOILà! ils utilisent un dataset que j'ai, avec une technique que je comprends.
+On peut reproduire le réseau de neurones. Mais pas les résultats. Cependant, leur technique de (non) tokenization est simple et apporte un excellent résultat sur le dataset good/bad queries.
+
 
 ## 7. Modélisation et Évaluation des Modèles
 
 ### Modélisation des URL : KNN, SVM, regression logistique, CNN
-
 <!-- - Pourquoi avez-vous choisi ces modèles spécifiques pour la modélisation des URL ? -->
+Certains choix s'imposent par leur simplicité ou leur rapidité. Cependant, il faut rapidement se rendre compte que les scores f1 sont mauvais et qu'une autre solution peut être tentée.
+
 
 ### Utilisation de ChatGPT et des GPU pour accélérer le développement
-
 <!-- - Pourquoi ces outils ont-ils été utilisés pour accélérer le développement ? -->
+Clairement, accéder à un GPU est crucial pour l'entraînement des réseaux de neurones. On passe parfois de 2h à 20 minutes. 
+De son côté, CHatgpt 4o permet, par itération, de debugguer rapidement, de documenter à grande vitesse et surtout de coder des éléments selon des spécifications qui changent rapidement. 
+
 
 ### Organisation des priorités et gestion des expérimentations
-
 <!-- - Pourquoi cette organisation est-elle importante pour la réussite de votre projet ? -->
+Il a fallu commencer à développer un pipeline permettant d'utiliser MLflow, puis de requêter le modèle taggué comme "en production" dans MLflow. Cela constituait une application "minimum".
+
 
 ## 8. Travail avec Splunk et Pipelines
 
 ### Traitement des données Splunk en préproduction
 
 <!-- - Pourquoi le traitement des données en préproduction est-il nécessaire ? -->
+Splunk étant mis en test, j'ai pu manipuler le siem et me rendre compte des données que je récupérais.
+
 
 ### Tokenization des URL et limitations
 
 <!-- - Pourquoi avez-vous utilisé cette méthode de tokenization et quelles en sont les limites ? -->
+Une tokenization classique: sujette à l'imagination et source de versions infinies. Mais dont les limites surviennent lors de la conception du modèle. donner exemple de codes
+Jusqu'à l'idée de l'article: pas de tokenization mais un passage par le code Ascii. donner la fonction.
 
 ### Développement de pipelines et utilisation de GridsearchCV
-
 <!-- - Pourquoi ces techniques sont-elles cruciales pour optimiser les modèles ? -->
+Pour pouvoir calibrer le modèle, il faut pouvoir jouer sur les hyper paramètres. Il a donc fallu trouver comment utiliser GridsearchCV => consommateur de temps.
+
 
 ### Évaluation des performances des modèles
-
 <!-- - Pourquoi une évaluation rigoureuse des performances est-elle essentielle ? -->
+On peut avoir un score accuracy très élevé, mais un f1 très bas car les classes sont déséquilibrées. 
+pas de problème de datadrift, car pas encore de données. Les datasets sont fixes. Mais c'est un problème.
+
 
 ## 9. Expérimentations et Déploiement
 
 ### Utilisation de MLFlow pour la gestion des expérimentations
-
 <!-- - Pourquoi MLFlow est-il un choix stratégique pour gérer les expérimentations ? -->
+MLflow vs. Metaflow.
+
 
 ### Apprentissage à requêter et déployer un modèle via une API
-
 <!-- - Pourquoi cette compétence est-elle importante dans le cadre de votre stage ? -->
+utilisation de FastAPI
+
 
 ### Déploiement sur un cluster Kubernetes et gestion du preprocessing
-
 <!-- - Pourquoi Kubernetes et le preprocessing sont-ils importants pour le déploiement ? -->
+Assure une stabilité du site.
+Il faut reproduire le preprocessing utilisé dans la construction du modèle pour pouvoir utiliser l'API.
+construction du modèle => stockage du modèle dans MLFlow + stockage du preprocessor dans Minio
+Utilisation de l'API => download le preprocessor (ou réutilise une fonction pour le code ascii (plus simple))
+construction de l'image docker (schéma)
+utilisation des yaml, des commandes kubernetes
+
 
 ### Introduction à Metaflow (Netflix) et tests préliminaires
-
 <!-- - Pourquoi avez-vous exploré Metaflow et quels avantages cela apporte-t-il ? -->
+Metaflow est intéressant car il permet de reprendre une étape du traitement sans avoir à refaire les traitements précédents grâce à un système de "step". TOut est enregistré dans le minio de l'utilisateur (photo).
+
 
 ## 10. Reproductibilité et MLOps
 
@@ -337,12 +361,14 @@ Co
 <!-- - Pourquoi la reproductibilité est-elle critique dans le domaine du machine learning ? -->
 
 ### Réalisation d'un projet MLOps :
-
 <!-- - Pourquoi ces aspects spécifiques du MLOps sont-ils importants ? -->
+Continuité entre le développement du modèle mis en production et son utilisation dans une API déployée
+
 
 ### Exploration de Spark pour le calcul et le streaming
-
 <!-- - Pourquoi Spark est-il un outil pertinent pour vos objectifs ? -->
+Vu les volumes de données,
+pour savoir si il serait possible de brancher directement un modèle de détection sur les url entrantes acceptées par le F5. SInon, il faudrait passer par un cron job et aller download par le bias de l'api splunk. 
 
 ## Conclusion
 

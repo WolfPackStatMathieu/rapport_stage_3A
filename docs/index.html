@@ -222,7 +222,6 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#lecture-et-analyse-de-larticle-machine-learning-for-cybersecurity-applications-de-la-west-virginia-university-wvu" id="toc-lecture-et-analyse-de-larticle-machine-learning-for-cybersecurity-applications-de-la-west-virginia-university-wvu" class="nav-link" data-scroll-target="#lecture-et-analyse-de-larticle-machine-learning-for-cybersecurity-applications-de-la-west-virginia-university-wvu">Lecture et analyse de l’article “Machine Learning for Cybersecurity Applications” de la West Virginia University (WVU)</a></li>
   <li><a href="#étude-de-a-comprehensive-review-of-anomaly-detection-in-web-logs-du-hasso-plattner-institute-hpi" id="toc-étude-de-a-comprehensive-review-of-anomaly-detection-in-web-logs-du-hasso-plattner-institute-hpi" class="nav-link" data-scroll-target="#étude-de-a-comprehensive-review-of-anomaly-detection-in-web-logs-du-hasso-plattner-institute-hpi">Étude de “A Comprehensive Review of Anomaly Detection in Web Logs” du Hasso Plattner Institute (HPI)</a></li>
-  <li><a href="#analyse-de-larticle-crisis2020_easychair_pid_011" id="toc-analyse-de-larticle-crisis2020_easychair_pid_011" class="nav-link" data-scroll-target="#analyse-de-larticle-crisis2020_easychair_pid_011">Analyse de l’article “CRISIS2020_EasyChair_PID_011”</a></li>
   <li><a href="#exploration-de-conf_sin2022__swaf-pour-le-développement-dun-pare-feu-applicatif-basé-sur-du-machine-learning" id="toc-exploration-de-conf_sin2022__swaf-pour-le-développement-dun-pare-feu-applicatif-basé-sur-du-machine-learning" class="nav-link" data-scroll-target="#exploration-de-conf_sin2022__swaf-pour-le-développement-dun-pare-feu-applicatif-basé-sur-du-machine-learning">Exploration de “Conf_SIN2022__SWAF” pour le développement d’un pare-feu applicatif basé sur du machine learning</a></li>
   </ul></li>
   <li><a href="#modélisation-et-évaluation-des-modèles" id="toc-modélisation-et-évaluation-des-modèles" class="nav-link" data-scroll-target="#modélisation-et-évaluation-des-modèles">7. Modélisation et Évaluation des Modèles</a>
@@ -451,7 +450,7 @@ div.csl-indent {
 <figcaption>Schéma simplifié du Système d’Information de l’Insee</figcaption>
 </figure>
 </div>
-<p>Le plus important pour le stage étant que le SI a un unique point d’entrée/sortie en zone 0: un firewall F5 qui permet de sécuriser et gérer le trafic réseau. C’est une solution sophistiquée (prix de vente global supérieur à 60 000 €) qui va protéger les applications et le réseau contre un large éventail de menaces tout en optimisant les performances et la disponibilité du service.</p>
+<p>Le plus important pour le stage étant que le SI a un unique point d’entrée/sortie en zone 0: un firewall F5 qui permet de sécuriser et gérer le trafic réseau. C’est une solution sophistiquée (prix de vente global supérieur à 60 000 €) qui va protéger les applications et le réseau contre un large éventail de menaces tout en optimisant les performances et la disponibilité des services.</p>
 </section>
 </section>
 <section id="compréhension-du-siem-et-des-logs" class="level3">
@@ -462,7 +461,7 @@ div.csl-indent {
 <li><p><strong>Logs centrés sur l’hôte</strong> : Capturent les événements survenus à l’intérieur de la machine hôte, tels qu’un utilisateur accédant à un fichier ou l’exécution d’un processus.</p></li>
 <li><p><strong>Logs centrés sur le réseau</strong> : Génèrent des logs lorsque les machines communiquent entre elles ou avec l’extérieur, comme le trafic web sur le site www.insee.fr, un fichier récupéré via le protocole FTP, ou encore un utilisateur se connectant au moyen d’un VPN.</p></li>
 </ul>
-<p>L’importance du SIEM provient du fait que le flux des logs est très important, de l’ordre de plusieurs dizaines de Go par jour pour le SI de l’Insee. En cas d’incident, examiner les logs machine par machine est une tâche pratiquement impossible sans SIEM. Ce dernier permet de faire des recherches dans les logs, de corréler les événements et de répondre rapidement aux incidents grâce à un système de détection et d’alerte en temps réel.</p>
+<p>L’importance du SIEM provient du fait que le flux des logs est très important, de l’ordre de plusieurs dizaines de Go par jour pour le SI de l’Insee. En cas d’incident, examiner les logs machine par machine est une tâche pratiquement impossible sans SIEM. Il est possible de paramétrer certaines règles qui vont permettre de créer des alarmes. Un SIEM permet de faire des recherches dans les logs, de corréler les événements et de répondre rapidement aux incidents grâce à un système de détection et d’alerte en temps réel.</p>
 <ul>
 <li><strong>Utilisation des logs</strong> : Tous les appareils du SI génèrent des logs comme on l’a vu. Par exemple Windows enregistre tous les événements, visibles sur l’Event Viewer. Chaque type de log reçoit un ID ce qui permet une analyse plus facile. Ces logs peuvent être envoyées (“forwardées”) au SIEM. On peut aussi récupérer des logs sur une machine Linux (ce qui concerne notamment les serveurs dans le SI de l’Insee). De même, il est très important de surveiller les requêtes et les réponses sur les serveurs webs afin de détecter des attaques webs. C’est un point central dans ce stage. Voici un exemple de ce dernier type de log</li>
 </ul>
@@ -477,97 +476,8 @@ div.csl-indent {
 <li><strong>Code de Statut</strong> : 200 (OK)</li>
 <li><strong>Taille de la Réponse</strong> : 2216 octets</li>
 </ul>
-<!-- Log IngestionShows Log Ingestion in SIEM
-
-All these logs provide a wealth of information and can help in identifying security issues. Each SIEM solution has its own way of ingesting the logs. Some common methods used by these SIEM solutions are explained below:
-
-1) Agent / Forwarder: These SIEM solutions provide a lightweight tool called an agent (forwarder by Splunk) that gets installed in the Endpoint. It is configured to capture all the important logs and send them to the SIEM server.
-2) Syslog: Syslog is a widely used protocol to collect data from various systems like web servers, databases, etc., are sent real-time data to the centralized destination.
-
-3) Manual Upload: Some SIEM solutions, like Splunk, ELK, etc., allow users to ingest offline data for quick analysis. Once the data is ingested, it is normalized and made available for analysis.
-
-4) Port-Forwarding: SIEM solutions can also be configured to listen on a certain port, and then the endpoints forward the data to the SIEM instance on the listening port.
-
-Why SIEM
-SIEM is used to provide correlation on the collected data to detect threats. Once a threat is detected, or a certain threshold is crossed, an alert is raised. This alert enables the analysts to take suitable actions based on the investigation. SIEM plays an important role in the Cyber Security domain and helps detect and protect against the latest threats in a timely manner. It provides good visibility of what's happening within the network infrastructure.
-SIEM Capabilities
-
-SIEM is one major component of a Security Operations Center (SOC) ecosystem, as illustrated below. SIEM starts by collecting logs and examining if any event/flow has matched the condition set in the rule or crossed a certain threshold
-
-Some of the common capabilities of SIEM are:
-
-    Correlation between events from different log sources.
-    Provide visibility on both Host-centric and Network-centric activities.
-    Allow analysts to investigate the latest threats and timely responses.
-    Hunt for threats that are not detected by the rules in place.
-
-SOC Analyst Responsibilities
-
-SOC Analysts utilize SIEM solutions in order to have better visibility of what is happening within the network. Some of their responsibilities include:
-
-    Monitoring and Investigating.
-    Identifying False positives.
-    Tuning Rules which are causing the noise or False positives.
-    Reporting and Compliance.
-    Identifying blind spots in the network visibility and covering them. -->
+<p>Lorsqu’une menace atteignant le SI est détectée par le SIEM, une alerte est lancée. Cette dernière permet aux analystes du SOC de la traiter. Un SIEM permet donc d’obtenir une visibilité sur l’ensemble des points du SI qui y auront été connectés. Dans le cadre du stage, j’ai pu accéder à un test de Splunk sur la partie du SI en zone sécurisée. Ainsi, j’ai été capable de récupérer les logs provenant du F5 positionné à l’entrée de cette zone 50.</p>
 <!-- - **Intégration des logs dans le SIEM** : Mentionnez comment les logs sont intégrés et utilisés par le SIEM pour la surveillance et la détection des menaces. -->
-<!-- Analysing Logs and Alerts
-SIEM tool gets all the security-related logs ingested through agents, port forwarding, etc. Once the logs are ingested, SIEM looks for unwanted behavior or suspicious pattern within the logs with the help of the conditions set in the rules by the analysts. If the condition is met, a rule gets triggered, and the incident is investigated.
-
-Dashboard
-
-Dashboards are the most important components of any SIEM. SIEM presents the data for analysis after being normalized and ingested. The summary of these analyses is presented in the form of actionable insights with the help of multiple dashboards. Each SIEM solution comes with some default dashboards and provides an option for custom Dashboard creation. Some of the information that can be found in a dashboard are:
-
-    Alert Highlights
-    System Notification
-    Health Alert
-    List of Failed Login Attempts
-    Events Ingested Count
-    Rules triggered
-    Top Domains Visited
-
-An example of a Default dashboard in Qradar SIEM is shown below:
-
-Correlation Rules
-
-Correlation rules play an important role in the timely detection of threats allowing analysts to take action on time. Correlation rules are pretty much logical expressions set to be triggered. A few examples of correlation rules are:
-
-    If a User gets 5 failed Login Attempts in 10 seconds - Raise an alert for Multiple Failed Login Attempts
-    If login is successful after multiple failed login attempts - Raise an alert for Successful Login After multiple Login Attempts
-    A rule is set to alert every time a user plugs in a USB (Useful if USB is restricted as per the company policy)
-    If outbound traffic is > 25 MB - Raise an alert to potential Data exfiltration Attempt (Usually, it depends on the company policy)
-
-How a correlation rule is created
-
-To explain how the rule works, consider the following Eventlog use cases:
-
-Use-Case 1:
-
-Adversaries tend to remove the logs during the post-exploitation phase to remove their tracks. A unique Event ID 104 is logged every time a user tries to remove or clear event logs. To create a rule based on this activity, we can set the condition as follows:
-
-Rule: If the Log source is WinEventLog AND EventID is 104 - Trigger an alert Event Log Cleared
-
-Use-Case 2: Adversaries use commands like whoami after the exploitation/privilege escalation phase. The following Fields will be helpful to include in the rule.
-
-    Log source: Identify the log source capturing the event logs
-    Event ID: which Event ID is associated with Process Execution activity? In this case, event id 4688 will be helpful.
-    NewProcessName: which process name will be helpful to include in the rule?
-
-Rule: If Log Source is WinEventLog AND EventCode is 4688, and NewProcessName contains whoami, then Trigger an ALERT WHOAMI command Execution DETECTED
-
-In the previous task, the importance of field-value pairs was discussed. Correlation rules keep an eye on the values of certain fields to get triggered. That is the reason why it is important to have normalized logs ingested.
-
-Alert Investigation
-
-When monitoring SIEM, analysts spend most of their time on dashboards as it displays various key details about the network in a very summarized way. Once an alert is triggered, the events/flows associated with the alert are examined, and the rule is checked to see which conditions are met. Based on the investigation, the analyst determines if it's a True or False positive. Some of the actions that are performed after the analysis are:
-
-    Alert is False Alarm. It may require tuning the rule to avoid similar False positives from occurring again.
-    Alert is True Positive. Perform further investigation.
-    Contact the asset owner to inquire about the activity.
-    Suspicious activity is confirmed. Isolate the infected host.
-    Block the suspicious IP.
-
-Let's move on to the next task and explore how SIEM works. -->
 </section>
 </section>
 <section id="recherche-et-collecte-de-données" class="level2">
@@ -575,10 +485,8 @@ Let's move on to the next task and explore how SIEM works. -->
 <section id="attente-de-splunk-et-recherche-de-datasets-pertinents" class="level3">
 <h3 class="anchored" data-anchor-id="attente-de-splunk-et-recherche-de-datasets-pertinents">Attente de Splunk et recherche de datasets pertinents</h3>
 <!-- - Pourquoi avez-vous choisi d'utiliser Splunk et quels critères ont guidé la recherche des datasets ? -->
-<ul>
-<li><p>Types de données : Réseau, logs, HTTP <!-- - Pourquoi ces types de données spécifiques sont-ils importants ? --></p></li>
-<li><p>Sélection et préparation des datasets <!-- - Pourquoi cette étape est-elle critique pour la suite du projet ? --></p></li>
-</ul>
+<p>Au début du stage, le SIEM Splunk n’était pas encore prêt. Je ne connaissais pas encore les données possibles. J’ai donc cherché des exemples de machine learning dans le domaine de la cybersécurité. - Types de données : Réseau, logs, HTTP <!-- - Pourquoi ces types de données spécifiques sont-ils importants ? --> il a fallu comprendre le type de données sur lesquelles travailler: 1. Frameworks and Models 2. Encrypted Traffic Analysis 3. Intrusion Detection 4. Botnet and Ransomware 5. URL-based Threats 6. Cloud Infrastructure Security 7. Malware Analysis 8. Network and Host Events 9. Miscellaneous Datasets - Sélection et préparation des datasets</p>
+<pre><code>&lt;!-- - Pourquoi cette étape est-elle critique pour la suite du projet ? --&gt;</code></pre>
 </section>
 <section id="présentation-des-premières-données-obtenues" class="level3">
 <h3 class="anchored" data-anchor-id="présentation-des-premières-données-obtenues">Présentation des premières données obtenues</h3>
@@ -587,17 +495,20 @@ Let's move on to the next task and explore how SIEM works. -->
 </section>
 <section id="choix-des-problèmes-et-des-outils-de-machine-learning" class="level2">
 <h2 class="anchored" data-anchor-id="choix-des-problèmes-et-des-outils-de-machine-learning">3. Choix des Problèmes et des Outils de Machine Learning</h2>
+<p>recherche de sites, un bien: https://github.com/jivoi/awesome-ml-for-cybersecurity</p>
 <section id="définition-des-problèmes-de-machine-learning-en-cybersécurité" class="level3">
 <h3 class="anchored" data-anchor-id="définition-des-problèmes-de-machine-learning-en-cybersécurité">Définition des problèmes de machine learning en cybersécurité</h3>
 <!-- - Pourquoi est-il crucial de bien définir les problèmes avant de choisir les outils ? -->
+<p>faut-il faire de la détection d’anomalie (non supervisé) ou bien de la classification (supervisée)</p>
 </section>
 <section id="introduction-à-scikit-learn-et-choix-des-modèles" class="level3">
 <h3 class="anchored" data-anchor-id="introduction-à-scikit-learn-et-choix-des-modèles">Introduction à Scikit-learn et choix des modèles</h3>
 <!-- - Pourquoi avez-vous choisi Scikit-learn et ces modèles spécifiques ? -->
+<p>road map de scikit learn: https://scikit-learn.org/1.3/tutorial/machine_learning_map/index.html</p>
 </section>
 <section id="formation-à-linterprétabilité-des-modèles" class="level3">
 <h3 class="anchored" data-anchor-id="formation-à-linterprétabilité-des-modèles">Formation à l’interprétabilité des modèles</h3>
-<!-- - Pourquoi l'interprétabilité est-elle importante dans le contexte de la cybersécurité ? -->
+<p>shap: https://train.learn.datascientest.com/notebooks/137/447 <!-- - Pourquoi l'interprétabilité est-elle importante dans le contexte de la cybersécurité ? --></p>
 </section>
 </section>
 <section id="exploration-de-modèles-et-outils-avancés" class="level2">
@@ -605,18 +516,20 @@ Let's move on to the next task and explore how SIEM works. -->
 <section id="essais-avec-xgboost-pour-la-classification-des-malwares" class="level3">
 <h3 class="anchored" data-anchor-id="essais-avec-xgboost-pour-la-classification-des-malwares">Essais avec XGBoost pour la classification des malwares</h3>
 <!-- - Pourquoi avez-vous choisi XGBoost pour ce problème ? -->
+<p>essai simple et rapide, mais hors sujet. Retour sur good bad queries</p>
 </section>
 <section id="découverte-de-mlflow-et-utilisation-de-lapi" class="level3">
 <h3 class="anchored" data-anchor-id="découverte-de-mlflow-et-utilisation-de-lapi">Découverte de MLflow et utilisation de l’API</h3>
-<!-- - Pourquoi MLflow est-il utile pour votre projet ? -->
+<p>Comment gérer tous ces notebook ? cf.&nbsp;cours de Lino <!-- - Pourquoi MLflow est-il utile pour votre projet ? --></p>
 </section>
 <section id="introduction-au-deep-learning-avec-le-livre-deep-learning-from-scratch-dlfs" class="level3">
 <h3 class="anchored" data-anchor-id="introduction-au-deep-learning-avec-le-livre-deep-learning-from-scratch-dlfs">Introduction au deep learning avec le livre “Deep Learning from Scratch” (DLFS)</h3>
-<!-- - Pourquoi ce livre et le deep learning sont-ils pertinents pour vos objectifs ? -->
+<p>Bon, il va falloir faire du deep learning, mais comment s’y prendre vraiment ? Est-ce uqe j’ai bien compris en cours ? Voyons voir. Ah oui, on peut battre une régression linéaire avec du deep learning fait soi même. Voir le livre. <!-- - Pourquoi ce livre et le deep learning sont-ils pertinents pour vos objectifs ? --></p>
 </section>
 <section id="exploration-des-design-patterns-en-deep-learning" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-des-design-patterns-en-deep-learning">Exploration des design patterns en deep learning</h3>
 <!-- - Pourquoi est-il important de comprendre ces design patterns ? -->
+<p>Aller voir les différences possibles dans les modèles pour implémenter ensuite.</p>
 </section>
 </section>
 <section id="anomaly-detection-et-modèles-de-classification" class="level2">
@@ -624,18 +537,22 @@ Let's move on to the next task and explore how SIEM works. -->
 <section id="détour-par-la-détection-danomalies-difficultés-et-recentrage" class="level3">
 <h3 class="anchored" data-anchor-id="détour-par-la-détection-danomalies-difficultés-et-recentrage">Détour par la détection d’anomalies : Difficultés et recentrage</h3>
 <!-- - Pourquoi avez-vous rencontré ces difficultés et comment avez-vous réajusté votre approche ? -->
+<p>on peut facilement faire de la détection d’anomalie avec des algo, l’article fondateur est disponible. Mais le sujet apparaît encore trop difficile. Je n’ai pas encore les données, mais je peux accéder à des dataset de requête http labellisé. Donc on va se recentrer dessus.</p>
 </section>
 <section id="analyses-simples-avec-knn-et-clustering" class="level3">
 <h3 class="anchored" data-anchor-id="analyses-simples-avec-knn-et-clustering">Analyses simples avec KNN et clustering</h3>
 <!-- - Pourquoi avez-vous choisi ces méthodes pour l'analyse initiale ? -->
+<p>très difficile de faire ce genre de chose, car la tokenization implique de passer en grande (grande…) dimension. Curse of dimensionality. Le clustering ne nous intéresse pas pour répondre à un problème d’analyste SOC. Je veux pouvoir analyser une requête, pas connaître des clusters.</p>
 </section>
 <section id="analyse-des-données-http-et-détection-des-attaques-ex.-ddos" class="level3">
 <h3 class="anchored" data-anchor-id="analyse-des-données-http-et-détection-des-attaques-ex.-ddos">Analyse des données HTTP et détection des attaques (ex. DDOS)</h3>
 <!-- - Pourquoi ces types d'attaques sont-ils une priorité dans votre analyse ? -->
+<p>On ne peut pas détecter du DDOS, et ce n’est pas l’objet. Il sera trop tard. Donc on va encore limiter à des requêtes pour d’autres attaques.</p>
 </section>
 <section id="focalisation-sur-lanalyse-des-url-et-compréhension-des-attaques" class="level3">
 <h3 class="anchored" data-anchor-id="focalisation-sur-lanalyse-des-url-et-compréhension-des-attaques">Focalisation sur l’analyse des URL et compréhension des attaques</h3>
 <!-- - Pourquoi l'analyse des URL est-elle cruciale dans la détection des attaques ? -->
+<p>quelques documents disponibles, les champs (description dans un des articles) COmment tokenizer la données ?</p>
 </section>
 </section>
 <section id="exploration-darticles-scientifiques" class="level2">
@@ -647,14 +564,12 @@ Let's move on to the next task and explore how SIEM works. -->
 <section id="étude-de-a-comprehensive-review-of-anomaly-detection-in-web-logs-du-hasso-plattner-institute-hpi" class="level3">
 <h3 class="anchored" data-anchor-id="étude-de-a-comprehensive-review-of-anomaly-detection-in-web-logs-du-hasso-plattner-institute-hpi">Étude de “A Comprehensive Review of Anomaly Detection in Web Logs” du Hasso Plattner Institute (HPI)</h3>
 <!-- - Pourquoi cet article est-il pertinent pour votre travail ? -->
-</section>
-<section id="analyse-de-larticle-crisis2020_easychair_pid_011" class="level3">
-<h3 class="anchored" data-anchor-id="analyse-de-larticle-crisis2020_easychair_pid_011">Analyse de l’article “CRISIS2020_EasyChair_PID_011”</h3>
-<!-- - Pourquoi cet article est-il pertinent pour votre travail ? -->
+<p>Beaucoup de choses peuvent être faite dans la détection, mais finalement pas tant de problèmes similaires au mien.</p>
 </section>
 <section id="exploration-de-conf_sin2022__swaf-pour-le-développement-dun-pare-feu-applicatif-basé-sur-du-machine-learning" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-de-conf_sin2022__swaf-pour-le-développement-dun-pare-feu-applicatif-basé-sur-du-machine-learning">Exploration de “Conf_SIN2022__SWAF” pour le développement d’un pare-feu applicatif basé sur du machine learning</h3>
 <!-- - Pourquoi cet article est-il pertinent pour votre travail ? -->
+<p>VOILà! ils utilisent un dataset que j’ai, avec une technique que je comprends. On peut reproduire le réseau de neurones. Mais pas les résultats. Cependant, leur technique de (non) tokenization est simple et apporte un excellent résultat sur le dataset good/bad queries.</p>
 </section>
 </section>
 <section id="modélisation-et-évaluation-des-modèles" class="level2">
@@ -662,14 +577,17 @@ Let's move on to the next task and explore how SIEM works. -->
 <section id="modélisation-des-url-knn-svm-regression-logistique-cnn" class="level3">
 <h3 class="anchored" data-anchor-id="modélisation-des-url-knn-svm-regression-logistique-cnn">Modélisation des URL : KNN, SVM, regression logistique, CNN</h3>
 <!-- - Pourquoi avez-vous choisi ces modèles spécifiques pour la modélisation des URL ? -->
+<p>Certains choix s’imposent par leur simplicité ou leur rapidité. Cependant, il faut rapidement se rendre compte que les scores f1 sont mauvais et qu’une autre solution peut être tentée.</p>
 </section>
 <section id="utilisation-de-chatgpt-et-des-gpu-pour-accélérer-le-développement" class="level3">
 <h3 class="anchored" data-anchor-id="utilisation-de-chatgpt-et-des-gpu-pour-accélérer-le-développement">Utilisation de ChatGPT et des GPU pour accélérer le développement</h3>
 <!-- - Pourquoi ces outils ont-ils été utilisés pour accélérer le développement ? -->
+<p>Clairement, accéder à un GPU est crucial pour l’entraînement des réseaux de neurones. On passe parfois de 2h à 20 minutes. De son côté, CHatgpt 4o permet, par itération, de debugguer rapidement, de documenter à grande vitesse et surtout de coder des éléments selon des spécifications qui changent rapidement.</p>
 </section>
 <section id="organisation-des-priorités-et-gestion-des-expérimentations" class="level3">
 <h3 class="anchored" data-anchor-id="organisation-des-priorités-et-gestion-des-expérimentations">Organisation des priorités et gestion des expérimentations</h3>
 <!-- - Pourquoi cette organisation est-elle importante pour la réussite de votre projet ? -->
+<p>Il a fallu commencer à développer un pipeline permettant d’utiliser MLflow, puis de requêter le modèle taggué comme “en production” dans MLflow. Cela constituait une application “minimum”.</p>
 </section>
 </section>
 <section id="travail-avec-splunk-et-pipelines" class="level2">
@@ -677,18 +595,22 @@ Let's move on to the next task and explore how SIEM works. -->
 <section id="traitement-des-données-splunk-en-préproduction" class="level3">
 <h3 class="anchored" data-anchor-id="traitement-des-données-splunk-en-préproduction">Traitement des données Splunk en préproduction</h3>
 <!-- - Pourquoi le traitement des données en préproduction est-il nécessaire ? -->
+<p>Splunk étant mis en test, j’ai pu manipuler le siem et me rendre compte des données que je récupérais.</p>
 </section>
 <section id="tokenization-des-url-et-limitations" class="level3">
 <h3 class="anchored" data-anchor-id="tokenization-des-url-et-limitations">Tokenization des URL et limitations</h3>
 <!-- - Pourquoi avez-vous utilisé cette méthode de tokenization et quelles en sont les limites ? -->
+<p>Une tokenization classique: sujette à l’imagination et source de versions infinies. Mais dont les limites surviennent lors de la conception du modèle. donner exemple de codes Jusqu’à l’idée de l’article: pas de tokenization mais un passage par le code Ascii. donner la fonction.</p>
 </section>
 <section id="développement-de-pipelines-et-utilisation-de-gridsearchcv" class="level3">
 <h3 class="anchored" data-anchor-id="développement-de-pipelines-et-utilisation-de-gridsearchcv">Développement de pipelines et utilisation de GridsearchCV</h3>
 <!-- - Pourquoi ces techniques sont-elles cruciales pour optimiser les modèles ? -->
+<p>Pour pouvoir calibrer le modèle, il faut pouvoir jouer sur les hyper paramètres. Il a donc fallu trouver comment utiliser GridsearchCV =&gt; consommateur de temps.</p>
 </section>
 <section id="évaluation-des-performances-des-modèles" class="level3">
 <h3 class="anchored" data-anchor-id="évaluation-des-performances-des-modèles">Évaluation des performances des modèles</h3>
 <!-- - Pourquoi une évaluation rigoureuse des performances est-elle essentielle ? -->
+<p>On peut avoir un score accuracy très élevé, mais un f1 très bas car les classes sont déséquilibrées. pas de problème de datadrift, car pas encore de données. Les datasets sont fixes. Mais c’est un problème.</p>
 </section>
 </section>
 <section id="expérimentations-et-déploiement" class="level2">
@@ -696,18 +618,22 @@ Let's move on to the next task and explore how SIEM works. -->
 <section id="utilisation-de-mlflow-pour-la-gestion-des-expérimentations" class="level3">
 <h3 class="anchored" data-anchor-id="utilisation-de-mlflow-pour-la-gestion-des-expérimentations">Utilisation de MLFlow pour la gestion des expérimentations</h3>
 <!-- - Pourquoi MLFlow est-il un choix stratégique pour gérer les expérimentations ? -->
+<p>MLflow vs.&nbsp;Metaflow.</p>
 </section>
 <section id="apprentissage-à-requêter-et-déployer-un-modèle-via-une-api" class="level3">
 <h3 class="anchored" data-anchor-id="apprentissage-à-requêter-et-déployer-un-modèle-via-une-api">Apprentissage à requêter et déployer un modèle via une API</h3>
 <!-- - Pourquoi cette compétence est-elle importante dans le cadre de votre stage ? -->
+<p>utilisation de FastAPI</p>
 </section>
 <section id="déploiement-sur-un-cluster-kubernetes-et-gestion-du-preprocessing" class="level3">
 <h3 class="anchored" data-anchor-id="déploiement-sur-un-cluster-kubernetes-et-gestion-du-preprocessing">Déploiement sur un cluster Kubernetes et gestion du preprocessing</h3>
 <!-- - Pourquoi Kubernetes et le preprocessing sont-ils importants pour le déploiement ? -->
+<p>Assure une stabilité du site. Il faut reproduire le preprocessing utilisé dans la construction du modèle pour pouvoir utiliser l’API. construction du modèle =&gt; stockage du modèle dans MLFlow + stockage du preprocessor dans Minio Utilisation de l’API =&gt; download le preprocessor (ou réutilise une fonction pour le code ascii (plus simple)) construction de l’image docker (schéma) utilisation des yaml, des commandes kubernetes</p>
 </section>
 <section id="introduction-à-metaflow-netflix-et-tests-préliminaires" class="level3">
 <h3 class="anchored" data-anchor-id="introduction-à-metaflow-netflix-et-tests-préliminaires">Introduction à Metaflow (Netflix) et tests préliminaires</h3>
 <!-- - Pourquoi avez-vous exploré Metaflow et quels avantages cela apporte-t-il ? -->
+<p>Metaflow est intéressant car il permet de reprendre une étape du traitement sans avoir à refaire les traitements précédents grâce à un système de “step”. TOut est enregistré dans le minio de l’utilisateur (photo).</p>
 </section>
 </section>
 <section id="reproductibilité-et-mlops" class="level2">
@@ -719,10 +645,12 @@ Let's move on to the next task and explore how SIEM works. -->
 <section id="réalisation-dun-projet-mlops" class="level3">
 <h3 class="anchored" data-anchor-id="réalisation-dun-projet-mlops">Réalisation d’un projet MLOps :</h3>
 <!-- - Pourquoi ces aspects spécifiques du MLOps sont-ils importants ? -->
+<p>Continuité entre le développement du modèle mis en production et son utilisation dans une API déployée</p>
 </section>
 <section id="exploration-de-spark-pour-le-calcul-et-le-streaming" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-de-spark-pour-le-calcul-et-le-streaming">Exploration de Spark pour le calcul et le streaming</h3>
 <!-- - Pourquoi Spark est-il un outil pertinent pour vos objectifs ? -->
+<p>Vu les volumes de données, pour savoir si il serait possible de brancher directement un modèle de détection sur les url entrantes acceptées par le F5. SInon, il faudrait passer par un cron job et aller download par le bias de l’api splunk.</p>
 </section>
 </section>
 <section id="conclusion" class="level2">
