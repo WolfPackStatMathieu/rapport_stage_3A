@@ -148,6 +148,7 @@ L'équipe SOC joue un rôle crucial dans la préservation de l'intégrité, de l
 
 ![Schéma simplifié du Système d'Information de l'Insee](figures/schema_SI_simplifie.png "SI de l'Insee")
 
+Le plus important pour le stage étant que le SI a un unique point d'entrée/sortie en zone 0: un firewall F5 qui permet de sécuriser et gérer le trafic réseau. C'est une solution sophistiquée (prix de vente global supérieur à 60 000 €) qui va protéger les applications et le réseau contre un large éventail de menaces tout en optimisant les performances et la disponibilité du service.
 
 ### Compréhension du SIEM et des logs
 
@@ -158,45 +159,26 @@ L'équipe SOC joue un rôle crucial dans la préservation de l'intégrité, de l
 
 - **Logs centrés sur le réseau** : Génèrent des logs lorsque les machines communiquent entre elles ou avec l'extérieur, comme le trafic web sur le site www.insee.fr, un fichier récupéré via le protocole FTP, ou encore un utilisateur se connectant au moyen d'un VPN.
 
-L'importance du SIEM provient du fait que le flux des logs est très important, de l'ordre de plusieurs dizaines de Go par jour pour le SI de l'Insee. En cas d'incident, examiner les logs machine par machine est une tâche pratiquement impossible sans SIEM. Ce dernier permet de faire des recherches dans les logs, de corréler les événements et de répondre rapidement aux incidents.
+L'importance du SIEM provient du fait que le flux des logs est très important, de l'ordre de plusieurs dizaines de Go par jour pour le SI de l'Insee. En cas d'incident, examiner les logs machine par machine est une tâche pratiquement impossible sans SIEM. Ce dernier permet de faire des recherches dans les logs, de corréler les événements et de répondre rapidement aux incidents grâce à un système de détection et d'alerte en temps réel.
 
 
 - **Utilisation des logs** : Décrivez l'importance des logs dans la détection des incidents de sécurité.
-Log Sources and Log Ingestion
-Every device in the network generates some kind of log whenever an activity is performed on it, like a user visiting a website, connecting to SSH, logging into his workstation, etc. Some common devices that are found in a network environment are discussed below:
 
-Windows Machine
+Tous les appareils du SI génèrent des logs comme on l'a vu. Par exemple Windows enregistre tous les événements, visibles sur l'Event Viewer. Chaque type de log reçoit un ID ce qui permet une analyse plus facile. Ces logs peuvent être envoyées ("forwardées") au SIEM. On peut aussi récupérer des logs sur une machine Linux (ce qui concerne notamment les serveurs dans le SI de l'Insee). De même, il est très important de surveiller les requêtes et les réponses sur les serveurs webs afin de détecter des attaques webs. C'est un point central dans ce stage. Voici un exemple de ce dernier type de log
 
-Windows records every event that can be viewed through the Event Viewer utility. It assigns a unique ID to each type of log activity, making it easy for the analyst to examine and keep track of. To view events in a Windows environment, type Event Viewer in the search bar, and it takes you to the tool where different logs are stored and can be viewed, as shown below. These logs from all windows endpoints are forwarded to the SIEM solution for monitoring and better visibility.
-
-Linux Workstation
-
-Linux OS stores all the related logs, such as events, errors, warnings, etc. Which are then ingested into SIEM for continuous monitoring. Some of the common locations where Linux store logs are:
-
-    /var/log/httpd : Contains HTTP Request  / Response and error logs.
-    /var/log/cron   : Events related to cron jobs are stored in this location.
-    /var/log/auth.log and /var/log/secure : Stores authentication related logs.
-    /var/log/kern : This file stores kernel related events.
-
-Here is a sample of a cron log:
-
-May 28 13:04:20 ebr crond[2843]: /usr/sbin/crond 4.4 dillon's cron daemon, started with loglevel notice
-May 28 13:04:20 ebr crond[2843]: no timestamp found (user root job sys-hourly)
-May 28 13:04:20 ebr crond[2843]: no timestamp found (user root job sys-daily)
-May 28 13:04:20 ebr crond[2843]: no timestamp found (user root job sys-weekly)
-May 28 13:04:20 ebr crond[2843]: no timestamp found (user root job sys-monthly)
-Jun 13 07:46:22 ebr crond[3592]: unable to exec /usr/sbin/sendmail: cron output for user root job sys-daily to /dev/null
-
-Web Server
-
-It is important to keep an eye on all the requests/responses coming in and out of the webserver for any potential web attack attempt. In Linux, common locations to write all apache related logs are /var/log/apache or /var/log/httpd.
-
-Here is an example of Apache Logs:
-
-192.168.21.200 - - [21/March/2022:10:17:10 -0300] "GET /cgi-bin/try/ HTTP/1.0" 200 3395
+ **Exemple de log issue d'une requête web :**
+```default
 127.0.0.1 - - [21/March/2022:10:22:04 -0300] "GET / HTTP/1.0" 200 2216
+```
+- **Client IP** : 127.0.0.1 (localhost)
+- **Identd** : - (non utilisé)
+- **Utilisateur Authentifié** : - (non utilisé)
+- **Date et Heure** : 21 mars 2022, 10:22:04 (UTC-3)
+- **Demande HTTP** : GET / (utilisant HTTP/1.0)
+- **Code de Statut** : 200 (OK)
+- **Taille de la Réponse** : 2216 octets
 
-Log IngestionShows Log Ingestion in SIEM
+<!-- Log IngestionShows Log Ingestion in SIEM
 
 All these logs provide a wealth of information and can help in identifying security issues. Each SIEM solution has its own way of ingesting the logs. Some common methods used by these SIEM solutions are explained below:
 
@@ -228,12 +210,12 @@ SOC Analysts utilize SIEM solutions in order to have better visibility of what i
     Identifying False positives.
     Tuning Rules which are causing the noise or False positives.
     Reporting and Compliance.
-    Identifying blind spots in the network visibility and covering them.
+    Identifying blind spots in the network visibility and covering them. -->
 
 
-- **Intégration des logs dans le SIEM** : Mentionnez comment les logs sont intégrés et utilisés par le SIEM pour la surveillance et la détection des menaces.
+<!-- - **Intégration des logs dans le SIEM** : Mentionnez comment les logs sont intégrés et utilisés par le SIEM pour la surveillance et la détection des menaces. -->
 
-Analysing Logs and Alerts
+<!-- Analysing Logs and Alerts
 SIEM tool gets all the security-related logs ingested through agents, port forwarding, etc. Once the logs are ingested, SIEM looks for unwanted behavior or suspicious pattern within the logs with the help of the conditions set in the rules by the analysts. If the condition is met, a rule gets triggered, and the incident is investigated.
 
 Dashboard
@@ -289,7 +271,7 @@ When monitoring SIEM, analysts spend most of their time on dashboards as it disp
     Suspicious activity is confirmed. Isolate the infected host.
     Block the suspicious IP.
 
-Let's move on to the next task and explore how SIEM works.
+Let's move on to the next task and explore how SIEM works. -->
 
 ## 2. Recherche et Collecte de Données
 
