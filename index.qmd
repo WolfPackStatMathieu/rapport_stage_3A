@@ -148,7 +148,7 @@ L'équipe SOC joue un rôle crucial dans la préservation de l'intégrité, de l
 
 ![Schéma simplifié du Système d'Information de l'Insee](figures/schema_SI_simplifie.png "SI de l'Insee")
 
-Le plus important pour le stage étant que le SI a un unique point d'entrée/sortie en zone 0: un firewall F5 qui permet de sécuriser et gérer le trafic réseau. C'est une solution sophistiquée (prix de vente global supérieur à 60 000 €) qui va protéger les applications et le réseau contre un large éventail de menaces tout en optimisant les performances et la disponibilité du service.
+Le plus important pour le stage étant que le SI a un unique point d'entrée/sortie en zone 0: un firewall F5 qui permet de sécuriser et gérer le trafic réseau. C'est une solution sophistiquée (prix de vente global supérieur à 60 000 €) qui va protéger les applications et le réseau contre un large éventail de menaces tout en optimisant les performances et la disponibilité des services.
 
 ### Compréhension du SIEM et des logs
 
@@ -159,7 +159,7 @@ Le plus important pour le stage étant que le SI a un unique point d'entrée/sor
 
 - **Logs centrés sur le réseau** : Génèrent des logs lorsque les machines communiquent entre elles ou avec l'extérieur, comme le trafic web sur le site www.insee.fr, un fichier récupéré via le protocole FTP, ou encore un utilisateur se connectant au moyen d'un VPN.
 
-L'importance du SIEM provient du fait que le flux des logs est très important, de l'ordre de plusieurs dizaines de Go par jour pour le SI de l'Insee. En cas d'incident, examiner les logs machine par machine est une tâche pratiquement impossible sans SIEM. Ce dernier permet de faire des recherches dans les logs, de corréler les événements et de répondre rapidement aux incidents grâce à un système de détection et d'alerte en temps réel.
+L'importance du SIEM provient du fait que le flux des logs est très important, de l'ordre de plusieurs dizaines de Go par jour pour le SI de l'Insee. En cas d'incident, examiner les logs machine par machine est une tâche pratiquement impossible sans SIEM. Il est possible de paramétrer certaines règles qui vont permettre de créer des alarmes. Un SIEM permet de faire des recherches dans les logs, de corréler les événements et de répondre rapidement aux incidents grâce à un système de détection et d'alerte en temps réel. 
 
 
 - **Utilisation des logs** : Tous les appareils du SI génèrent des logs comme on l'a vu. Par exemple Windows enregistre tous les événements, visibles sur l'Event Viewer. Chaque type de log reçoit un ID ce qui permet une analyse plus facile. Ces logs peuvent être envoyées ("forwardées") au SIEM. On peut aussi récupérer des logs sur une machine Linux (ce qui concerne notamment les serveurs dans le SI de l'Insee). De même, il est très important de surveiller les requêtes et les réponses sur les serveurs webs afin de détecter des attaques webs. C'est un point central dans ce stage. Voici un exemple de ce dernier type de log
@@ -176,111 +176,31 @@ L'importance du SIEM provient du fait que le flux des logs est très important, 
 - **Code de Statut** : 200 (OK)
 - **Taille de la Réponse** : 2216 octets
 
-<!-- Log IngestionShows Log Ingestion in SIEM
-
-All these logs provide a wealth of information and can help in identifying security issues. Each SIEM solution has its own way of ingesting the logs. Some common methods used by these SIEM solutions are explained below:
-
-1) Agent / Forwarder: These SIEM solutions provide a lightweight tool called an agent (forwarder by Splunk) that gets installed in the Endpoint. It is configured to capture all the important logs and send them to the SIEM server.
-2) Syslog: Syslog is a widely used protocol to collect data from various systems like web servers, databases, etc., are sent real-time data to the centralized destination.
-
-3) Manual Upload: Some SIEM solutions, like Splunk, ELK, etc., allow users to ingest offline data for quick analysis. Once the data is ingested, it is normalized and made available for analysis.
-
-4) Port-Forwarding: SIEM solutions can also be configured to listen on a certain port, and then the endpoints forward the data to the SIEM instance on the listening port.
-
-Why SIEM
-SIEM is used to provide correlation on the collected data to detect threats. Once a threat is detected, or a certain threshold is crossed, an alert is raised. This alert enables the analysts to take suitable actions based on the investigation. SIEM plays an important role in the Cyber Security domain and helps detect and protect against the latest threats in a timely manner. It provides good visibility of what's happening within the network infrastructure.
-SIEM Capabilities
-
-SIEM is one major component of a Security Operations Center (SOC) ecosystem, as illustrated below. SIEM starts by collecting logs and examining if any event/flow has matched the condition set in the rule or crossed a certain threshold
-
-Some of the common capabilities of SIEM are:
-
-    Correlation between events from different log sources.
-    Provide visibility on both Host-centric and Network-centric activities.
-    Allow analysts to investigate the latest threats and timely responses.
-    Hunt for threats that are not detected by the rules in place.
-
-SOC Analyst Responsibilities
-
-SOC Analysts utilize SIEM solutions in order to have better visibility of what is happening within the network. Some of their responsibilities include:
-
-    Monitoring and Investigating.
-    Identifying False positives.
-    Tuning Rules which are causing the noise or False positives.
-    Reporting and Compliance.
-    Identifying blind spots in the network visibility and covering them. -->
-
+Lorsqu'une menace atteignant le SI est détectée par le SIEM, une alerte est lancée. Cette dernière permet aux analystes du SOC de la traiter. Un SIEM permet donc d'obtenir une visibilité sur l'ensemble des points du SI qui y auront été connectés. Dans le cadre du stage, j'ai pu accéder à un test de Splunk sur la partie du SI en zone sécurisée. Ainsi, j'ai été capable de récupérer les logs provenant du F5 positionné à l'entrée de cette zone 50.
 
 <!-- - **Intégration des logs dans le SIEM** : Mentionnez comment les logs sont intégrés et utilisés par le SIEM pour la surveillance et la détection des menaces. -->
-
-<!-- Analysing Logs and Alerts
-SIEM tool gets all the security-related logs ingested through agents, port forwarding, etc. Once the logs are ingested, SIEM looks for unwanted behavior or suspicious pattern within the logs with the help of the conditions set in the rules by the analysts. If the condition is met, a rule gets triggered, and the incident is investigated.
-
-Dashboard
-
-Dashboards are the most important components of any SIEM. SIEM presents the data for analysis after being normalized and ingested. The summary of these analyses is presented in the form of actionable insights with the help of multiple dashboards. Each SIEM solution comes with some default dashboards and provides an option for custom Dashboard creation. Some of the information that can be found in a dashboard are:
-
-    Alert Highlights
-    System Notification
-    Health Alert
-    List of Failed Login Attempts
-    Events Ingested Count
-    Rules triggered
-    Top Domains Visited
-
-An example of a Default dashboard in Qradar SIEM is shown below:
-
-Correlation Rules
-
-Correlation rules play an important role in the timely detection of threats allowing analysts to take action on time. Correlation rules are pretty much logical expressions set to be triggered. A few examples of correlation rules are:
-
-    If a User gets 5 failed Login Attempts in 10 seconds - Raise an alert for Multiple Failed Login Attempts
-    If login is successful after multiple failed login attempts - Raise an alert for Successful Login After multiple Login Attempts
-    A rule is set to alert every time a user plugs in a USB (Useful if USB is restricted as per the company policy)
-    If outbound traffic is > 25 MB - Raise an alert to potential Data exfiltration Attempt (Usually, it depends on the company policy)
-
-How a correlation rule is created
-
-To explain how the rule works, consider the following Eventlog use cases:
-
-Use-Case 1:
-
-Adversaries tend to remove the logs during the post-exploitation phase to remove their tracks. A unique Event ID 104 is logged every time a user tries to remove or clear event logs. To create a rule based on this activity, we can set the condition as follows:
-
-Rule: If the Log source is WinEventLog AND EventID is 104 - Trigger an alert Event Log Cleared
-
-Use-Case 2: Adversaries use commands like whoami after the exploitation/privilege escalation phase. The following Fields will be helpful to include in the rule.
-
-    Log source: Identify the log source capturing the event logs
-    Event ID: which Event ID is associated with Process Execution activity? In this case, event id 4688 will be helpful.
-    NewProcessName: which process name will be helpful to include in the rule?
-
-Rule: If Log Source is WinEventLog AND EventCode is 4688, and NewProcessName contains whoami, then Trigger an ALERT WHOAMI command Execution DETECTED
-
-In the previous task, the importance of field-value pairs was discussed. Correlation rules keep an eye on the values of certain fields to get triggered. That is the reason why it is important to have normalized logs ingested.
-
-Alert Investigation
-
-When monitoring SIEM, analysts spend most of their time on dashboards as it displays various key details about the network in a very summarized way. Once an alert is triggered, the events/flows associated with the alert are examined, and the rule is checked to see which conditions are met. Based on the investigation, the analyst determines if it's a True or False positive. Some of the actions that are performed after the analysis are:
-
-    Alert is False Alarm. It may require tuning the rule to avoid similar False positives from occurring again.
-    Alert is True Positive. Perform further investigation.
-    Contact the asset owner to inquire about the activity.
-    Suspicious activity is confirmed. Isolate the infected host.
-    Block the suspicious IP.
-
-Let's move on to the next task and explore how SIEM works. -->
 
 ## 2. Recherche et Collecte de Données
 
 ### Attente de Splunk et recherche de datasets pertinents
 
 <!-- - Pourquoi avez-vous choisi d'utiliser Splunk et quels critères ont guidé la recherche des datasets ? -->
-
+Au début du stage, le SIEM Splunk n'était pas encore prêt. Je ne connaissais pas encore les données possibles. J'ai donc cherché des exemples de machine learning dans le domaine de la cybersécurité. 
   - Types de données : Réseau, logs, HTTP
     <!-- - Pourquoi ces types de données spécifiques sont-ils importants ? -->
+il a fallu comprendre le type de données sur lesquelles travailler:
+1. Frameworks and Models
+2. Encrypted Traffic Analysis
+3. Intrusion Detection
+4. Botnet and Ransomware
+5. URL-based Threats
+6. Cloud Infrastructure Security
+7. Malware Analysis
+8. Network and Host Events
+9. Miscellaneous Datasets
+   - Sélection et préparation des datasets
 
-  - Sélection et préparation des datasets
+
     <!-- - Pourquoi cette étape est-elle critique pour la suite du projet ? -->
 
 ### Présentation des premières données obtenues
@@ -289,16 +209,20 @@ Let's move on to the next task and explore how SIEM works. -->
 
 ## 3. Choix des Problèmes et des Outils de Machine Learning
 
+recherche de sites, un bien: https://github.com/jivoi/awesome-ml-for-cybersecurity
+
 ### Définition des problèmes de machine learning en cybersécurité
 
 <!-- - Pourquoi est-il crucial de bien définir les problèmes avant de choisir les outils ? -->
+faut-il faire de la détection d'anomalie (non supervisé) ou bien de la classification (supervisée)
 
 ### Introduction à Scikit-learn et choix des modèles
 
 <!-- - Pourquoi avez-vous choisi Scikit-learn et ces modèles spécifiques ? -->
+road map de scikit learn: https://scikit-learn.org/1.3/tutorial/machine_learning_map/index.html
 
 ### Formation à l'interprétabilité des modèles
-
+shap: https://train.learn.datascientest.com/notebooks/137/447
 <!-- - Pourquoi l'interprétabilité est-elle importante dans le contexte de la cybersécurité ? -->
 
 ## 4. Exploration de Modèles et Outils Avancés
@@ -306,9 +230,10 @@ Let's move on to the next task and explore how SIEM works. -->
 ### Essais avec XGBoost pour la classification des malwares
 
 <!-- - Pourquoi avez-vous choisi XGBoost pour ce problème ? -->
+essai simple et rapide, mais hors sujet. Retour sur good bad queries
 
 ### Découverte de MLflow et utilisation de l'API
-
+Co
 <!-- - Pourquoi MLflow est-il utile pour votre projet ? -->
 
 ### Introduction au deep learning avec le livre "Deep Learning from Scratch" (DLFS)
