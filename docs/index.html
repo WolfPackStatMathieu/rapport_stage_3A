@@ -196,7 +196,7 @@ div.csl-indent {
   <li><a href="#recherche-et-collecte-de-données" id="toc-recherche-et-collecte-de-données" class="nav-link" data-scroll-target="#recherche-et-collecte-de-données">2. Recherche et Collecte de Données</a>
   <ul class="collapse">
   <li><a href="#attente-de-splunk-et-recherche-de-datasets-pertinents" id="toc-attente-de-splunk-et-recherche-de-datasets-pertinents" class="nav-link" data-scroll-target="#attente-de-splunk-et-recherche-de-datasets-pertinents">Attente de Splunk et recherche de datasets pertinents</a></li>
-  <li><a href="#présentation-des-premières-données-obtenues" id="toc-présentation-des-premières-données-obtenues" class="nav-link" data-scroll-target="#présentation-des-premières-données-obtenues">Présentation des premières données obtenues</a></li>
+  <li><a href="#présentation-des-premières-données-sélectionnées" id="toc-présentation-des-premières-données-sélectionnées" class="nav-link" data-scroll-target="#présentation-des-premières-données-sélectionnées">Présentation des premières données sélectionnées</a></li>
   </ul></li>
   <li><a href="#choix-des-problèmes-et-des-outils-de-machine-learning" id="toc-choix-des-problèmes-et-des-outils-de-machine-learning" class="nav-link" data-scroll-target="#choix-des-problèmes-et-des-outils-de-machine-learning">3. Choix des Problèmes et des Outils de Machine Learning</a>
   <ul class="collapse">
@@ -485,12 +485,14 @@ div.csl-indent {
 <section id="attente-de-splunk-et-recherche-de-datasets-pertinents" class="level3">
 <h3 class="anchored" data-anchor-id="attente-de-splunk-et-recherche-de-datasets-pertinents">Attente de Splunk et recherche de datasets pertinents</h3>
 <!-- - Pourquoi avez-vous choisi d'utiliser Splunk et quels critères ont guidé la recherche des datasets ? -->
-<p>Au début du stage, le SIEM Splunk n’était pas encore prêt. Je ne connaissais pas encore les données possibles. J’ai donc cherché des exemples de machine learning dans le domaine de la cybersécurité. - Types de données : Réseau, logs, HTTP <!-- - Pourquoi ces types de données spécifiques sont-ils importants ? --> il a fallu comprendre le type de données sur lesquelles travailler: 1. Frameworks and Models 2. Encrypted Traffic Analysis 3. Intrusion Detection 4. Botnet and Ransomware 5. URL-based Threats 6. Cloud Infrastructure Security 7. Malware Analysis 8. Network and Host Events 9. Miscellaneous Datasets - Sélection et préparation des datasets</p>
-<pre><code>&lt;!-- - Pourquoi cette étape est-elle critique pour la suite du projet ? --&gt;</code></pre>
+<p>Au début du stage, le SIEM Splunk n’était pas encore prêt. Je ne connaissais pas encore les données possibles. J’ai donc cherché des exemples de machine learning dans le domaine de la cybersécurité. - Types de données : Réseau, logs, HTTP <!-- - Pourquoi ces types de données spécifiques sont-ils importants ? --> il a fallu comprendre le type de données sur lesquelles travailler. De nombreuses travaux sont disponibles en cybersécurité. Il existe également un certain nombre de datasets disponibles. Par exemple, on peut trouver des données sur des paquets de type “PCAP”, des jeux de données avec des tentatives d’intrusion, des malwares ou bien des urls de sites webs malicieux. Sans problème à résoudre bien identifié, il est compliqué de s’orienter dedans. Voici quelques exemples de jeux de données disponibles: <!-- #TODO : mettre des exemples --> 1. Frameworks and Models 2. Encrypted Traffic Analysis 3. Intrusion Detection 4. Botnet and Ransomware 5. URL-based Threats 6. Cloud Infrastructure Security 7. Malware Analysis 8. Network and Host Events 9. Miscellaneous Datasets</p>
+<p>Un type de données</p>
 </section>
-<section id="présentation-des-premières-données-obtenues" class="level3">
-<h3 class="anchored" data-anchor-id="présentation-des-premières-données-obtenues">Présentation des premières données obtenues</h3>
+<section id="présentation-des-premières-données-sélectionnées" class="level3">
+<h3 class="anchored" data-anchor-id="présentation-des-premières-données-sélectionnées">Présentation des premières données sélectionnées</h3>
 <!-- - Pourquoi ces données sont-elles pertinentes pour votre projet ? -->
+<p>Le jeu de données “good_bad_queries” disponible ICI <!-- #TODO mettre le lien vers le repo github --> a constitué une étape importante. En effet, ce jeu de données est très simple. Il est constitué de deux fichiers. L’un “good_queries.txt” contient des url de requêtes http non malicieuses, et l’autre “bad_queries.txt” contient des requêtes malicieuses. Ce sont des fichiers de texte, sur une seule colonne. Voici un exemple: <!-- #TODO mettre des lignes de chaque fichier --></p>
+<p>La simplicité de ce jeu de données est à relativiser. Dans le cadre du stage, il est intéressant d’apprendre à le connaître par une première analyse descriptive. En effet, dans les données issues du firewall f5, auxquelles j’ai eu accès plus tard, on s’aperçoit vite qu’une attaque est avant tout portée par le contenu de ce champ. D’autres champs d’une requête peuvent aider à déterminer s’il s’agit d’une attaque ou non, mais sans l’url, il est pratiquement imposssible de conclure. Voici une petite analyse descriptive de ce jeu de données: <!-- #TODO faire l'analyse descriptive depuis le notebook --></p>
 </section>
 </section>
 <section id="choix-des-problèmes-et-des-outils-de-machine-learning" class="level2">
