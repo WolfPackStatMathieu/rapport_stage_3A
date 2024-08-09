@@ -60,7 +60,7 @@ Finaliser la formation d'attaché statisticien en s'appliquant à résoudre un p
 
 <!-- - Pourquoi ce stage est-il pertinent dans votre parcours académique et professionnel ? -->
 
-Ce stage s'inscrit pleinement dans le parcours que j'ai progressivement construit tout au long de ma carrière à l'Insee. Débutant il y a plusieurs années sur un poste de contrôleur-programmeur, j'ai pu apprécier les cours d'informatique et de statistiques pendant mon parcours à l'Ensai. J'y ai suivi les options menant progressivement à se spécialiser jusqu'au master en Informatique et traitement des données. 
+Ce stage s'inscrit pleinement dans le parcours que j'ai progressivement construit tout au long de ma carrière à l'Insee. Débutant il y a plusieurs années sur un poste de contrôleur-programmeur, j'ai pu apprécier les cours d'informatique et de statistiques pendant mon parcours à l'Ensai. J'y ai suivi les options menant progressivement à se spécialiser jusqu'au master en Informatique et traitement des données.
 
 Au cours de ma préparation et de l'obtention de la qualification d'analyste, ma curiosité pour la sécurité des systèmes d'information s'est particulièrement développée. L'analyse des requêtes au sein d'un réseau soulève de nombreuses questions : volume des données, méthode de traitement statistique avec le machine learning, rapidité et efficacité de ce traitement. C'est un domaine où les techniques de machine learning présentent un intérêt certain.
 
@@ -105,7 +105,7 @@ Ces objectifs m'ont permis de m'assurer que ce stage serait bénéfique pour mon
 ### Premiers pas dans le stage : Enthousiasme et incertitude
 
 <!-- - Pourquoi avez-vous ressenti ces sentiments au début ? -->
-- **Sentiments initiaux** : 
+- **Sentiments initiaux** :
 Avant de commencer le stage, j'avais pu discuter avec le RSSI (Responsable Sécurité du Système d'Information) et le DSI (Directeur du Système d'Information) de l'Insee au cours d'une formation interne avant l'oral de la qualification d'analyste. J'étais plutôt impressionné par les enjeux, le SI de l'Insee étant régulièrement la cible d'attaques dont j'entendais parler. Cependant, si je savais que je n'étais pas formé comme un "véritable" informaticien [-@noauthor_mi-2020-2_nodate], n'ayant reçu qu'une "sensibilisation à l'informatique de production ou à la sécurité" [-@noauthor_mi-2020-2_nodate-1] p55, j'avais plutôt confiance dans mes récentes capacités à traiter des données et dans mon envie de découvrir le domaine.
 
 - **Raisons de ces sentiments** : Lors de la scolarité, j'avais pris l'habitude d'explorer les rayonnages de la bibliothèque de l'Ensai, et j'y avais repéré un livre [-@chio_machine_nodate] sur le machine learning et la sécurité. Me remémorant ce dont m'avait parlé mon ancien maître de stage sur le plan de reprise d'activité de l'application critique Elire, et en sachant qu'un système informatique génère une quantité de données sur lesquelles il est possible de travailler pour mieux en comprendre les rouages, la perspective de travailler sur la sécurité du SI de l'Insee m'intéressait beaucoup. Cependant, je n'avais pas encore d'idée sur l'application concrète d'un tel projet, ce qui me plongeait dans une certaine incertitude.
@@ -159,7 +159,7 @@ Le plus important pour le stage étant que le SI a un unique point d'entrée/sor
 
 - **Logs centrés sur le réseau** : Génèrent des logs lorsque les machines communiquent entre elles ou avec l'extérieur, comme le trafic web sur le site www.insee.fr, un fichier récupéré via le protocole FTP, ou encore un utilisateur se connectant au moyen d'un VPN.
 
-L'importance du SIEM provient du fait que le flux des logs est très important, de l'ordre de plusieurs dizaines de Go par jour pour le SI de l'Insee. En cas d'incident, examiner les logs machine par machine est une tâche pratiquement impossible sans SIEM. Il est possible de paramétrer certaines règles qui vont permettre de créer des alarmes. Un SIEM permet de faire des recherches dans les logs, de corréler les événements et de répondre rapidement aux incidents grâce à un système de détection et d'alerte en temps réel. 
+L'importance du SIEM provient du fait que le flux des logs est très important, de l'ordre de plusieurs dizaines de Go par jour pour le SI de l'Insee. En cas d'incident, examiner les logs machine par machine est une tâche pratiquement impossible sans SIEM. Il est possible de paramétrer certaines règles qui vont permettre de créer des alarmes. Un SIEM permet de faire des recherches dans les logs, de corréler les événements et de répondre rapidement aux incidents grâce à un système de détection et d'alerte en temps réel.
 
 
 - **Utilisation des logs** : Tous les appareils du SI génèrent des logs comme on l'a vu. Par exemple Windows enregistre tous les événements, visibles sur l'Event Viewer. Chaque type de log reçoit un ID ce qui permet une analyse plus facile. Ces logs peuvent être envoyées ("forwardées") au SIEM. On peut aussi récupérer des logs sur une machine Linux (ce qui concerne notamment les serveurs dans le SI de l'Insee). De même, il est très important de surveiller les requêtes et les réponses sur les serveurs webs afin de détecter des attaques webs. C'est un point central dans ce stage. Voici un exemple de ce dernier type de log
@@ -185,7 +185,7 @@ Lorsqu'une menace atteignant le SI est détectée par le SIEM, une alerte est la
 ### Attente de Splunk et recherche de datasets pertinents
 
 <!-- - Pourquoi avez-vous choisi d'utiliser Splunk et quels critères ont guidé la recherche des datasets ? -->
-Au début du stage, le SIEM Splunk n'était pas encore prêt. Je ne connaissais pas encore les données possibles. J'ai donc cherché des exemples de machine learning dans le domaine de la cybersécurité. 
+Au début du stage, le SIEM Splunk n'était pas encore prêt. Je ne connaissais pas encore les données possibles. J'ai donc cherché des exemples de machine learning dans le domaine de la cybersécurité.
   - Types de données : Réseau, logs, HTTP
     <!-- - Pourquoi ces types de données spécifiques sont-ils importants ? -->
 il a fallu comprendre le type de données sur lesquelles travailler:
@@ -225,7 +225,7 @@ road map de scikit learn: https://scikit-learn.org/1.3/tutorial/machine_learning
 shap: https://train.learn.datascientest.com/notebooks/137/447
 <!-- - Pourquoi l'interprétabilité est-elle importante dans le contexte de la cybersécurité ? -->
 
-## 4. Exploration de Modèles et Outils Avancés
+## 4. Exploration de Modèles et Outils Avancés COUCOU
 
 ### Essais avec XGBoost pour la classification des malwares
 
@@ -259,7 +259,7 @@ Le clustering ne nous intéresse pas pour répondre à un problème d'analyste S
 
 ### Analyse des données HTTP et détection des attaques (ex. DDOS)
 <!-- - Pourquoi ces types d'attaques sont-ils une priorité dans votre analyse ? -->
-On ne peut pas détecter du DDOS, et ce n'est pas l'objet. Il sera trop tard. Donc on va encore limiter à des requêtes pour d'autres attaques. 
+On ne peut pas détecter du DDOS, et ce n'est pas l'objet. Il sera trop tard. Donc on va encore limiter à des requêtes pour d'autres attaques.
 
 ### Focalisation sur l'analyse des URL et compréhension des attaques
 <!-- - Pourquoi l'analyse des URL est-elle cruciale dans la détection des attaques ? -->
@@ -275,7 +275,7 @@ COmment tokenizer la données ?
 
 ### Étude de "A Comprehensive Review of Anomaly Detection in Web Logs" du Hasso Plattner Institute (HPI)
 <!-- - Pourquoi cet article est-il pertinent pour votre travail ? -->
-Beaucoup de choses peuvent être faite dans la détection, mais finalement pas tant de problèmes similaires au mien. 
+Beaucoup de choses peuvent être faite dans la détection, mais finalement pas tant de problèmes similaires au mien.
 
 
 ### Exploration de "Conf_SIN2022__SWAF" pour le développement d'un pare-feu applicatif basé sur du machine learning
@@ -293,8 +293,8 @@ Certains choix s'imposent par leur simplicité ou leur rapidité. Cependant, il 
 
 ### Utilisation de ChatGPT et des GPU pour accélérer le développement
 <!-- - Pourquoi ces outils ont-ils été utilisés pour accélérer le développement ? -->
-Clairement, accéder à un GPU est crucial pour l'entraînement des réseaux de neurones. On passe parfois de 2h à 20 minutes. 
-De son côté, CHatgpt 4o permet, par itération, de debugguer rapidement, de documenter à grande vitesse et surtout de coder des éléments selon des spécifications qui changent rapidement. 
+Clairement, accéder à un GPU est crucial pour l'entraînement des réseaux de neurones. On passe parfois de 2h à 20 minutes.
+De son côté, CHatgpt 4o permet, par itération, de debugguer rapidement, de documenter à grande vitesse et surtout de coder des éléments selon des spécifications qui changent rapidement.
 
 
 ### Organisation des priorités et gestion des expérimentations
@@ -323,7 +323,7 @@ Pour pouvoir calibrer le modèle, il faut pouvoir jouer sur les hyper paramètre
 
 ### Évaluation des performances des modèles
 <!-- - Pourquoi une évaluation rigoureuse des performances est-elle essentielle ? -->
-On peut avoir un score accuracy très élevé, mais un f1 très bas car les classes sont déséquilibrées. 
+On peut avoir un score accuracy très élevé, mais un f1 très bas car les classes sont déséquilibrées.
 pas de problème de datadrift, car pas encore de données. Les datasets sont fixes. Mais c'est un problème.
 
 
@@ -368,7 +368,7 @@ Continuité entre le développement du modèle mis en production et son utilisat
 ### Exploration de Spark pour le calcul et le streaming
 <!-- - Pourquoi Spark est-il un outil pertinent pour vos objectifs ? -->
 Vu les volumes de données,
-pour savoir si il serait possible de brancher directement un modèle de détection sur les url entrantes acceptées par le F5. SInon, il faudrait passer par un cron job et aller download par le bias de l'api splunk. 
+pour savoir si il serait possible de brancher directement un modèle de détection sur les url entrantes acceptées par le F5. SInon, il faudrait passer par un cron job et aller download par le bias de l'api splunk.
 
 ## Conclusion
 
